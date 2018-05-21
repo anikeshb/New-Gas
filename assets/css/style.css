@@ -27,32 +27,6 @@
       4.3.5. Advertisements / .ads
   5. Footer / .footer
   ------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-  [Color codes]
-  * Mention the color code you have used in your html document for the respective
-  * elements given as follow. 
-  * (NOTE: Remove this commented code once you start developing the code. 
-  * Remove the following color code and add your own as this is just and 
-  * example to let you know)
-
-  Header nav: #e5e5df (Cararra)
-  Header nav a (hover): #fff (white)
-  Header nav a (active): #fff (white)
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-  [Typography]
-  * Mention the Typography you have used in your html document for the respective
-  * elements given as follow.
-  * (NOTE: Remove this commented code once you start developing the code. 
-  * Remove the following typography and add your own as this is just and 
-  * example to let you know)
-
-  Header nav a: 16px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  View-register li a : 12px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  -------------------------------------------------------------------*/
-
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -148,6 +122,8 @@ sub { bottom: -.25em; }
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
 
+body { font-family: 'Roboto', sans-serif; }
+
 a {
   color: #111;
   cursor: pointer;
@@ -163,7 +139,59 @@ ul li {
 }
 
 .wrapper {
-  max-width: 1093px;
-  width: 100%;
+  /*max-width: 1093px;*/
+  width: 85%;
   margin: auto;
+}
+
+
+
+/*-----------header----------------*/
+
+h1, nav{ display: inline-block; }
+h1 { padding-top: 30px; }
+header { border-bottom: 20px solid #01adef; }
+
+nav {
+  width: 70%;
+  padding: 20px 0;
+  vertical-align: top;
+}
+
+.btn-default {
+  box-sizing: border-box;
+  width: 195px;
+  padding: 10px 0 5px;
+  border: 2px solid #01b053;
+  border-radius: 30px; 
+  display: block;
+  background-color: #fff;
+  color: #01b053;
+  font-size: 23px;
+  text-align: center;
+}
+
+.btn-default:hover {
+  border: 2px solid #01adef;
+  background-color: #01adef;
+  color: #fff;
+}
+
+.bold { font-weight: 900; }
+nav ul { float: right; }
+nav li:not(:last-child) { margin-right: 30px; }
+.header-bottom { padding-bottom: 10px; }
+
+.header-bottom a{
+  margin-right: 40px; 
+  float: right;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.active {
+  border: 2px solid #01adef;
+  background-color: #01adef;
+  color: #fff;
 }
