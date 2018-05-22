@@ -17,11 +17,9 @@ function scroll() {
 
 // ------------------Dropdown------------------------
 
-<<<<<<< Updated upstream
 var btn=document.getElementById("down");
 var content=document.getElementById("scrolldown");
 btn.addEventListener('click',function () { scrollDown(); });
-=======
 function show() {
 	dropdown[0].classList.toggle('open');
 }
@@ -55,7 +53,7 @@ dropdown[0].addEventListener('click',function() { show(); });
 
 // ---------------------------------------------
 
->>>>>>> Stashed changes
+
 
 
 
