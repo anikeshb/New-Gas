@@ -13,9 +13,15 @@ console.log(window.pageYOffset);
   }
 }
 
-var btn=document.getElementById("down");
-var content=document.getElementById("scrolldown");
-btn.addEventListener('click',function () { scrollDown(); });
+function show() {
+	dropdown[0].classList.toggle('open');
+}
+
+var dropdown= document.getElementsByClassName('dropdown');
+dropdown[0].addEventListener('click',function() { show(); });
+
+
+
 
 
 
