@@ -64,6 +64,91 @@
 
 });
 
+ 	// ------------------Dropdown------------------------
+
+ 	(function($) {
+
+		$(window).on('load', function() {
+			$('#name').on('focusout', function() {
+				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
+	    		reg1 = /^[^<>*?]+$/;
+				if($(this).val() == ""){
+					$(this).next('span.error').remove();
+					$('<span class="error">Field can\'t be empty</span>').insertAfter("#name");
+				} else if($(this).val().length < 4 ||!$(this).val().match(reg_name) || !$(this).val().match(reg1)) {
+					$(this).next('span.error').remove();
+					$('<span class="error">Please enter valid input</span>').insertAfter("#name");
+				} else {
+					$(this).next('span.error').remove();
+				}
+			});
+
+			$('#address').on('focusout', function() {
+				var reg_add = /^[a-zA-Z0-9-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
+    			reg1 = /^[^<>*?$#%]+$/;
+				if($(this).val() == ""){
+					$(this).next('span.error').remove();
+					$('<span class="error">Field can\'t be empty</span>').insertAfter("#address");
+				} else if($(this).val().length < 4 || !$(this).val().match(reg_add) || !$(this).val().match(reg1)) {
+					$(this).next('span.error').remove();
+					$('<span class="error">Please enter valid input</span>').insertAfter("#address");
+				} else {
+					$(this).next('span.error').remove();
+				}
+			});
+
+			$('#city').on('focusout', function() {
+				var reg_add = /^[a-zA-Z0-9-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
+    			reg1 = /^[^<>*?$#%]+$/;
+				if($(this).val() == ""){
+					$(this).next('span.error').remove();
+					$('<span class="error">Field can\'t be empty</span>').insertAfter("#city");
+				} else if($(this).val().length < 4 || !$(this).val().match(reg_add) || !$(this).val().match(reg1)) {
+					$(this).next('span.error').remove();
+					$('<span class="error">Please enter valid input</span>').insertAfter("#city");
+				} else {
+					$(this).next('span.error').remove();
+				}
+			});
+
+
+			$('#phone').on('focusout', function() {
+				var reg_tel = /^[0-9-\s\-()+\s/]+$/,
+    			reg1 = /^[^!@#$%^&,_=;:"'./{}[\]|\\`~<>*?]+$/;
+				if($(this).val() == ""){
+					$(this).next('span.error').remove();
+					$('<span class="error">Field can\'t be empty</span>').insertAfter("#phone");
+				} else if(!$(this).val().match(reg_tel) || !$(this).val().match(reg1)) {
+					$(this).next('span.error').remove();
+					$('<span class="error">Please enter valid input</span>').insertAfter("#phone");
+				} else if ($(this).val().length < 10 || $(this).val().length > 10) {
+					$(this).next('span.error').remove();
+					$('<span class="error">Please enter valid input</span>').insertAfter("#phone");
+				}
+				else {
+					$(this).next('span.error').remove();
+				}
+			});
+			
+			$('#email').on('focusout', function() {
+				var reg_mail = /^[\s]{0,}[a-zA-Z0-9.!#$%&’();:"',[\]\\+/=^_`{|}~-]+@[a-zA-Z0-9.!#$%&’();:"',[\]\\+/=^_`{|}~-]+(?:\.[a-zA-Z0-9.!#$%&’();:"',[\]\\+/=^_`{|}~-]+)+[\s]{0,}$/;
+				if($(this).val() == ""){
+					$(this).next('span.error').remove();
+					$('<span class="error">Field can\'t be empty</span>').insertAfter("#email");
+				} else if(!$(this).val().match(reg_mail)) {
+					$(this).next('span.error').remove();
+					$('<span class="error">Please enter valid input</span>').insertAfter("#email");
+				}
+				else {
+					$(this).next('span.error').remove();
+				}
+			});
+
+		});
+
+
+ 	})(jQuery);
+
 
 
 
