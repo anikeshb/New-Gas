@@ -150,7 +150,7 @@ ul li {
   margin: auto;
 }
 
-
+.hide { overflow: hidden; }
 
 /*-----------header----------------*/
 
