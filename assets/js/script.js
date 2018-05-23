@@ -144,6 +144,21 @@
 				}
 			});
 
+			var $scroll_div = $(".main-content");
+			$('.bounce').on('click resize' , function(e) {
+				e.preventDefault();
+				if($(window).width() > 980) {
+					$('html, body').animate({
+		        		scrollTop : 530
+		    		}, 500);
+				} else {
+					$('html, body').animate({
+		        		scrollTop : 590
+		    		}, 500);
+				}
+			})
+
+
 		});
 
 
