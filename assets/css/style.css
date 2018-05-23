@@ -195,20 +195,42 @@ nav {
   text-align: center;
 }
 
-.btn-default:hover {
-  border: 2px solid #01adef;
-  background-color: #01adef;
-  color: #fff;
-}
 
 .bold { font-weight: 900; }
 nav ul { float: right; }
 nav li { margin-right: 10px; }
 
+nav li:nth-of-type(1) a {
+  border: 2px solid #01adef;
+  color: #01adef;
+  letter-spacing: -0.5px;
+}
+
+nav li:nth-of-type(1) a:hover { 
+  background-color: #01adef;
+  color: #fff;
+}
+
+nav li:nth-of-type(2) a {
+  border: 2px solid #01b053;
+  color: #01b053;
+  letter-spacing: -0.5px;
+}
+
+nav li:nth-of-type(2) a:hover { 
+  background-color: #01b053;
+  color: #fff;
+}
+
 nav li:nth-of-type(3) a {
   border: 2px solid #217b57;
   color: #217b57;
   letter-spacing: -0.5px;
+}
+
+nav li:nth-of-type(3) a:hover { 
+  background-color: #217b57;
+  color: #fff;
 }
 
 .header-bottom { padding-bottom: 13px; }
@@ -728,7 +750,7 @@ h6 {
     border-bottom: 2px solid  #01adef;
   }
   
-  h4 { font-size: 40px; }
+  h4 { font-size: 27px; }
   .main-content .image img{ width: auto; }
 
   .main-content li:nth-of-type(2n+1) .content {
@@ -756,7 +778,7 @@ h6 {
   .column-right { width: 100%; }
 
   .btn-sub {
-    margin: 10px auto; 
+    margin: 40px auto 15px;
     position: static; 
   }
 
@@ -772,19 +794,23 @@ h6 {
 
 
 @media screen and (max-width: 768px) {
-  h2 { width: 100%; }
-  
+  h2 { 
+    width: 100%;
+    font-size: 32px;
+    letter-spacing: 0; 
+  }
+
   h3 { 
     width: 100%; 
     padding: 20px 0;
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 25px;
+    line-height: 36px;
     letter-spacing: -0.5px;
   }
   
   h5 { 
-    font-size: 40px; 
-    line-height: 54px;
+    font-size: 30px;
+    line-height: 45px;
   }
   
 
@@ -793,13 +819,17 @@ h6 {
 @media screen and (max-width: 600px) {
     
     .align-left{ float: none; }
+    .contact-number { font-size: 18px; }
+    .main-content .content a { font-size: 16px; }
     
     .footer-logo,
     .social-icons {
       width: 90%;
-      padding: 10px 0;
+      padding: 20px 0;
       margin: 0 auto;
       display: block;
       text-align: center;
     }
+
+    .footer-list>li:not(:last-child) { border-bottom: 1px solid #fff; }
 } 
