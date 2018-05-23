@@ -499,6 +499,15 @@ textarea {
   font-size: 30px; 
 }
 
+.error {
+ display: block;
+ color: #ff0000;
+ font-size: 12px;
+ font-family: sans-serif;
+ position: relative;
+ bottom: 10px;
+}
+
 .btn-sub {
   box-sizing: border-box;
   width: 180px;
