@@ -199,7 +199,7 @@ nav {
   color: #fff;
 }
 
-.bold { font-weight: 900; }
+.bold { font-weight: 700; }
 nav ul { float: right; }
 nav li { margin-right: 10px; }
 
@@ -418,12 +418,17 @@ h4 { font-size: 50px; }
 
 /*---------------footer---------------------*/
 
-.footer-top { background-color: #b2e7f9; }
+.footer-top { 
+  padding: 26px 0;
+  background-color: #b2e7f9; 
+}
+
+.footer-top .wrapper { width: 82.5% }
 
 .column-left {
   box-sizing: border-box;
   width: 42%;
-  padding: 20px 0;
+  margin-right: -5px;
   display: inline-block;
   vertical-align: top;
 } 
@@ -433,24 +438,60 @@ form input{ display: block; }
 .column-right {
   box-sizing: border-box;
   width: 57%;
-  padding: 20px 0;
+  padding-top: 10px;
   display: inline-block;
   vertical-align: top;
 } 
 
-.column-left span {
-  font-size: 20px;
-  display: block;
-}
-
+.column-left span {display: block; }
 .new-line { display: block; }
 .footer-top .bold { display: block; }
-form input{ display: block; }
+
+form label { 
+  margin-bottom: 4px; 
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+form input{ 
+  width: 96.5%;
+  height: 45px;
+  padding: 0 10px;
+  margin-bottom: 14px;
+  border: none;
+  display: block; 
+  font-size: 25px;
+}
 
 h5 {
   color: #217b57;
-  font-size: 45px;
+  font-size: 50px;
 }
+
+textarea { 
+  width: 96.5%;
+  padding: 10px;
+  border: none;
+  display: block;
+  font-size: 25px;
+  resize: none; 
+}
+
+.new-line { font-size: 50px; }
+
+.contact-number { 
+  margin: 55px 0;
+  font-size: 30px; 
+}
+
+.btn-sub {
+  background-color: #01adef;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 
+}
+
 /*------------------------------------------*/
 
 /*-------------media queries---------------*/
