@@ -140,12 +140,12 @@ img {
 }
 
 ul li {
-  list-style: none;
   display: inline-block;
+  list-style: none;
 }
 
 .wrapper {
-  /*max-width: 1093px;*/
+  max-width: 1400px;
   width: 87%;
   margin: auto;
 }
@@ -157,13 +157,13 @@ ul li {
 h1, nav{ display: inline-block; }
 
 header { 
+  border-bottom: 20px solid #01adef;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
   right: 0;
   background-color: #fff; 
-  border-bottom: 20px solid #01adef;
   transition: ease-in 0.2s;
 }
 
@@ -208,6 +208,8 @@ nav li:nth-of-type(3) a {
   color: #217b57;
 }
 
+.header-bottom { padding-bottom: 13px; }
+
 .header-bottom a{
   margin-right: 8%; 
   float: right;
@@ -221,8 +223,6 @@ nav li:nth-of-type(3) a {
   background-color: #01adef;
   color: #fff;
 }
-
-
 
 .dropdown {
   width: 6%;
@@ -251,7 +251,7 @@ nav li:nth-of-type(3) a {
   max-height: 0;
   overflow: hidden;
   position: absolute;
-  top: 120%;
+  top: 103%;
   left: -10px;
   transition: ease-in 0.5s;
 }
@@ -280,9 +280,10 @@ nav li:nth-of-type(3) a {
 /*----------banner-------------------------*/
 
 .banner .wrapper { width: 83%; }
+
 .banner {
-  min-height: calc(100vh - 114px); 
-  margin-top: 125px;
+  min-height: calc(100vh - 124px); 
+  margin-top: 124px;
   position: relative; 
 }
 
@@ -492,14 +493,14 @@ h5 {
   header .wrapper { width: 93%; }
 
   .banner { 
-    min-height: calc(100vh - 80px);
-    margin-top: 80px; 
+    min-height: calc(100vh - 63px);
+    margin-top: 63px; 
   }
 
   .dropdown { 
     width: 20%;
     padding: 20px 0;
-    margin-left: 8%;
+    margin-left: 15%;
   }
 
   h2 { width: 100%; }
