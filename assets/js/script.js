@@ -69,6 +69,16 @@
  	(function($) {
 
 		$(window).on('load', function() {
+
+			if (location.hash !== "") {
+				  var hash = location.hash;
+					$('html, body').animate({
+					scrollTop: $(hash).offset().top
+					}, 1000, function(){
+	      });
+	    }
+
+
 			$('#name').on('focusout', function() {
 				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
 	    		reg1 = /^[^<>*?]+$/;
@@ -164,7 +174,7 @@
 				}
 			});
 
-
+				
 		});
 
 
