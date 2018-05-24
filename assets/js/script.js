@@ -149,13 +149,13 @@
 				e.preventDefault();
 				if($(window).width() > 980) {
 					$('html, body').animate({
-		        		scrollTop : 530
+		        		scrollTop : $scroll_div.offset().top - 129
 		    		}, 500);
 				} else {
 					$('html, body').animate({
-		        		scrollTop : 590
+		        		scrollTop : $scroll_div.offset().top - 65
 		    		}, 500);
-				}
+				} 
 			})
 
 
