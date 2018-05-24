@@ -704,7 +704,7 @@ h6 {
   letter-spacing: 0;
 }
 
-.introduction p {
+.how .introduction p {
   width: 75%;
   font-family: 'OpenSans-Light',sans-serif;
   font-size: 40px;
@@ -716,9 +716,7 @@ h6 {
 
 /*--------Information section page------------------------*/
 
-.information {
-  padding: 100px 0;
-}
+.information { padding: 100px 0 10px; }
 
 .video-container {
   height: 0; 
@@ -757,6 +755,56 @@ h6 {
   font-style: italic;
   font-weight: bold;
 }
+
+
+.how main h3 {
+  width: 100%;
+  margin: 50px 0 30px;
+  color: #111;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/*-----------details-----------------*/
+
+.how .details { padding: 80px 0; }
+
+.how .details p {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.camel { text-transform: capitalize; }
+
+.how .details li {
+  margin: 25px 0;
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.how .details li:before {
+  content: '';
+  width:  10px;
+  height: 10px;
+  margin-right: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #111;
+}
+
+.how .details li a {
+  display: inline;
+  color: #2790be;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 
 
 
