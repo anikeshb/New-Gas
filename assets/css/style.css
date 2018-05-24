@@ -743,7 +743,7 @@ h6 {
   width: 60%;
   padding: 2%;
   position: absolute;
-  background-color: #ea4624;
+  background-color: #217b57;
   right: -150px;
   top: 30%;
   box-shadow: 0 0 41px -8px rgba(0,0,0,.75);
@@ -805,11 +805,53 @@ h6 {
   text-decoration: underline;
 }
 
+.copy { float: right; }
 
+/*-----------responsive designs-------------------*/
 
+@media screen and (max-width: 980px) {
+   
+  .how main { margin-top: 63px; }  
 
+  .introduction h2,
+  .how .introduction p { width: 100%; }
 
-/*------------------------------------------*/
+}
+
+@media screen and (max-width: 600px) {
+  
+  .introduction { text-align: center; }
+  .introduction h2 { font-size: 30px; }
+
+  .how .details li:before { 
+    height: 8px;
+    width: 8px;
+    margin-right: 10px; 
+  }
+
+  .how .introduction p { 
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .how .details p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .how .details li {
+    margin: 21px 0;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .quote p { font-size: 20px; }
+
+}
+
+/*------------------------------------------------*/
+
+/*--------------------------------------------------------------*/
 
 
 /*-------------media queries---------------*/
@@ -1135,11 +1177,6 @@ h6 {
     width: 100%;
   } 
 
-  .special-offers .quote { 
-    box-sizing: border-box;
-    position: static; 
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 600px) {
