@@ -1286,6 +1286,7 @@ h6 {
 .why-switch main p {
   font-size: 30px;
   line-height: 40px;
+  font-weight: 900;
 }
 
 .camel { text-transform: capitalize; }
@@ -1328,6 +1329,8 @@ h6 {
 
 /*---------------------video section-----------------*/
 
+.why-switch .video { padding : 70px 0; }
+.why-switch .uvideo { margin: auto; }
 
 .why-switch .quote {
  width: 60%;
