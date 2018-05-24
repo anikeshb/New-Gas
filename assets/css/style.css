@@ -874,7 +874,12 @@ h6 {
   text-align: left;
 }
 
-.special-offers .offers h3 {
+.special-offers .offers .wrapper {
+  width: 60%;
+}
+
+
+.special-offers main h3 {
   width: 100%;
   margin: 50px 0 30px;
   color: #111;
@@ -884,13 +889,34 @@ h6 {
   text-transform: uppercase;
 }
 
-.special-offers .offers p {
+.special-offers main p {
   font-size: 30px;
   line-height: 40px;
 }
 
-.special-offers .offers li {
+.camel { text-transform: capitalize; }
+
+.special-offers main li {
   margin: 25px 0;
   display: block;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.special-offers main li:before {
+  content: '';
+  width:  10px;
+  height: 10px;
+  margin-right: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #111;
+}
+
+.special-offers main li a {
+  display: inline;
+  color: #2790be;
+  font-weight: 700;
+  text-decoration: underline;
 }
 /*------------------------------------------------------------------------*/
