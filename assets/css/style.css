@@ -121,6 +121,18 @@ sub { bottom: -.25em; }
  * as this is just and example to let you know. If there is only one font family
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
+  
+  @font-face {
+    font-family: OpenSans-Light;
+    src: url('../fonts/OpenSans-Light.eot'),
+         url('../fonts/OpenSans-Light.svg'),
+         url('../fonts/OpenSans-Light.ttf'),
+         url('../fonts/OpenSans-Light.woff');
+  }
+
+
+
+ /*=========generic==============*/
 
 body { font-family: 'Open Sans', sans-serif; }
 
@@ -277,7 +289,7 @@ nav li:nth-of-type(3) a:hover {
   max-height: 0;
   overflow: hidden;
   position: absolute;
-  top: 65px;
+  top: 62px;
   left: -10px;
   transition: ease-in 0.5s;
   -moz-transition: 0.5s ease-in;
@@ -296,7 +308,11 @@ nav li:nth-of-type(3) a:hover {
   font-size: 20px;
 }
 
-.dropdown li:first-child a{  background-color: #01b053; }
+.dropdown li:first-child a{  
+  background-color: #01b053; 
+  text-align: left;
+}
+
 .dropdown li:last-child a{  background-color: #01adef; }
 .dropdown li:first-child a:hover{  background-color: #217b56; }
 .dropdown li:last-child a:hover{  background-color: #0d7aa4; }
@@ -656,6 +672,89 @@ h6 {
   }
 }
 
+/*--------HOW page------------------------*/
+
+.how main { margin-top: 144px; }
+
+.how .active { 
+  background-color: #217b57;
+  color: #fff; 
+}
+
+/*--------Introduction section page------------------------*/
+
+.introduction {
+  padding: 68px 0;
+  background-color: #ebebeb;
+}
+
+.introduction h2 { 
+  width: 70%;
+  font-family: 'OpenSans-Light',sans-serif;
+  font-size: 67px;
+  font-style: italic;
+  font-weight: 800;
+  color: #58595b; 
+  letter-spacing: 0;
+}
+
+.introduction p {
+  width: 75%;
+  font-family: 'OpenSans-Light',sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 800;
+  color: #58595b; 
+  letter-spacing: 0;
+}
+
+/*--------Information section page------------------------*/
+
+.information {
+  padding: 100px 0;
+}
+
+.video-container {
+  height: 0; 
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.uvideo { 
+  width: 50%; 
+  position: relative;
+}
+
+.quote {
+  width: 60%;
+  padding: 2%;
+  position: absolute;
+  background-color: #ea4624;
+  right: -150px;
+  top: 30%;
+  box-shadow: 0 0 41px -8px rgba(0,0,0,.75);
+}
+
+.quote p {
+  color: #fff;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+
+
 /*------------------------------------------*/
 
 /*-------------media queries---------------*/
@@ -675,7 +774,7 @@ h6 {
     padding: 0;
     overflow: hidden;
     position: fixed;
-    top: 65px;
+    top: 62px;
     left: 0;
     right: 0;
     bottom: 0;
