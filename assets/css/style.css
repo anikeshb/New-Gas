@@ -122,6 +122,7 @@ sub { bottom: -.25em; }
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
 
+* { font-family: 'Open Sans', sans-serif; }
 body { font-family: 'Open Sans', sans-serif; }
 
 a {
@@ -658,6 +659,7 @@ h6 {
 
 /*------------------------------------------*/
 
+
 /*-------------media queries---------------*/
 
 @media screen and (max-width: 980px) {
@@ -833,3 +835,62 @@ h6 {
 
     .footer-list>li:not(:last-child) { border-bottom: 1px solid #fff; }
 } 
+
+
+
+
+/*---------------------------Special Offers page styling------------------*/
+
+.special-offers h2{
+  width: 100%;
+  padding: 20px 0 10px;
+  color: #58595b;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  text-transform: capitalize;
+}
+
+.special-offers main{ margin-top: 124px; } 
+
+.special-offers .banner-offers { 
+  padding: 50px 0;
+  background-color: #ebebeb;
+}
+
+.special-offers p:first-letter { text-transform: uppercase; }
+
+.special-offers .banner-offers p{ 
+  color: #58595b;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.special-offers .offers {
+  padding: 50px 0;
+  text-align: left;
+}
+
+.special-offers .offers h3 {
+  width: 100%;
+  margin: 50px 0 30px;
+  color: #111;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.special-offers .offers p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.special-offers .offers li {
+  margin: 25px 0;
+  display: block;
+}
+/*------------------------------------------------------------------------*/
