@@ -78,7 +78,7 @@
 	      });
 	    }
 
-	    $(".special-offers a").on('click', function(event) {
+	    $(".why-switch a").on('click', function(event) {
 		    	if (this.hash !== "" ) {
 		    		event.preventDefault();
 					  let hash = this.hash;

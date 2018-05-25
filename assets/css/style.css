@@ -165,7 +165,9 @@ ul li {
 
 .hide { overflow: hidden; }
 
-#sp-offers,#finance {
+#sp-offers,
+#finance,
+#benefits-anchor {
   position: relative;
   top: -90px; 
   visibility: hidden;}
@@ -820,7 +822,7 @@ h6 {
     text-align: center;
   }
 
-  #sp-offers,#finance {
+  #sp-offers,#finance,#benefits-anchor {
   position: relative;
   top: -65px; 
   visibility: hidden;
@@ -1080,31 +1082,10 @@ h6 {
 
 .why-switch .fixed-width { width: 60%; }
 
-/*---------------banner section----------------*/
-
-.why-switch h2{
-  width: 100%;
-  padding: 20px 0 10px;
-  color: #58595b;
-  font-size: 60px;
-  font-style: italic;
-  font-weight: 900;
-}
-
-.why-switch main{ margin-top: 124px; } 
-
-.why-switch .banner-why { 
-  padding: 50px 0;
-  background-color: #ebebeb;
-}
-
-
-/*-------------------------------------------------*/
 
 /*-----------content section----------------------*/
 
-.content { padding: 80px 0; }
-
+.content { padding: 40px 0; }
 .why-switch p:first-letter { text-transform: uppercase; }
 
 .why-switch .content p{ 
@@ -1129,12 +1110,6 @@ h6 {
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
-}
-
-.why-switch main p {
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 900;
 }
 
 .camel { text-transform: capitalize; }
@@ -1177,6 +1152,8 @@ h6 {
   color: #fff;
 }
 
+.discover,
+.compare { padding: 10px 0 }
 
 /*----------------------------------------------------*/
 
@@ -1210,16 +1187,31 @@ h6 {
 
 /*---------------banner section----------------*/
 
+.why-switch main h1 {
+  max-width: 100%; 
+  width: 100%;
+  float: none;
+  font-family: 'OpenSans-Light',sans-serif;
+  font-size: 67px;
+  font-style: italic;
+  font-weight: 800;
+  color: #58595b; 
+  letter-spacing: 0;
+}
+
 .why-switch  h2{
   width: 100%;
   padding: 20px 0 10px;
   color: #58595b;
+  font-family: 'OpenSans',sans-serif;
   font-size: 60px;
   font-style: none;
   font-weight: 900;
   letter-spacing: -0.5px;
   text-transform: capitalize;
 }
+
+
 
 .why-switch main{ margin-top: 124px; } 
 .why-switch .banner-why .fixed-width { width: 80%; }
@@ -1231,21 +1223,13 @@ h6 {
 
 .why-switch p:first-letter { text-transform: uppercase; }
 
-.why-switch .banner-why p{ 
-  color: #58595b;
-  font-size: 40px;
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: -0.5px;
-  line-height: 50px;
-}
+
 
 /*-------------------------------------------------*/
 
 /*-----------offers section----------------------*/
 
 .why-switch .offers {
-  padding: 50px 0;
   font-family: 'OpenSans',sans-serif;
   text-align: left;
 }
@@ -1264,7 +1248,8 @@ h6 {
 
 .why-switch main p {
   font-size: 30px;
-  line-height: 40px;
+  font-weight: 900;
+  line-height: 44px;
 }
 
 .camel { text-transform: capitalize; }
@@ -1305,27 +1290,50 @@ h6 {
 
 /*----------------------------------------------------*/
 
-/*---------------------video section-----------------*/
+/*------------------merits section------------------*/
 
+.merits { padding-bottom: 60px; }
 
-.why-switch .quote {
- width: 60%;
- padding: 2%;
- position: absolute;
- background-color: #0084b6;
- right: -150px;
- top: 30%;
- box-shadow: 0 0 41px -8px rgba(0,0,0,.75);
+.merits h4 {
+  margin-bottom: 20px;
+  font-family: 'OpenSans',sans-serif;
+  font-size: 33px;
+  font-weight: 900;
 }
 
-.why-switch .quote p {
- color: #fff;
- font-size: 24px;
- font-style: italic;
- font-weight: bold;
+.why-switch .merits li:before { display: none; }
+
+
+/*----------------------------------------------------*/
+
+/*----------------------buttons---------------------*/
+
+.btn-center { text-align: center; }
+
+.blue-btn { 
+  display: inline-block;
+  margin: 20px 10px;
 }
 
-/*-------------------------------------------------------*/
+.blue-btn a{
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  display: inline-block;
+  background-color: #01adef;
+  color: #fff;
+  font-family: 'OpenSans',sans-serif;
+  font-size: 22px;
+  font-weight: 900;  
+}
+
+.blue-btn a:hover {
+  border: 2px solid #01adef;
+  background-color: #fff;
+  color: #01adef;
+}
+
+/*-------------------------------------------------*/
 
 
 /*-----------responsive designs-------------------*/
@@ -1346,8 +1354,30 @@ h6 {
 
 @media screen and (max-width: 600px) {
   
-  .why-switch h2 { font-size: 30px; }
-  .why-switch main h3 { margin: 0; }
+  .why-switch .banner-why { 
+    padding: 30px 0; 
+    text-align: justify;
+  }
+
+  .why-switch main h1 { font-size: 26px; }
+
+  .why-switch h2 { 
+    margin: 20px 0;
+    font-size: 26px; 
+  }
+
+  .why-switch main h3 { 
+    margin: 0; 
+    font-size: 25px;
+  }
+  
+  .why-switch .content p {
+    margin: 17px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .blue-btn { margin: 10px; }
 
   .why-switch main li:before { 
     height: 8px;
@@ -1368,11 +1398,18 @@ h6 {
   .why-switch main li {
     margin: 21px 0;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 24px;
   }
 
   .why-switch .financing { padding-top: 30px; }
+  .why-switch .video { padding: 35px 0; }
 
+  .blue-btn a { 
+    padding: 9px 11px;
+    font-size: 14px;
+  }
+  
+  .merits h4 { font-size: 27px; }
 }
 
 /*------------------------------------------------*/
