@@ -825,8 +825,8 @@ h6 {
   top: -65px; 
   visibility: hidden;
   }
-
-
+  
+  .dropdown ul { left: -30px; }
   .footer-list>li:not(:last-child) { border-bottom: 1px solid #fff; }
 }
 
