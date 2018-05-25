@@ -214,7 +214,11 @@ nav {
 }
 
 
-.bold { font-weight: 900; }
+.bold {
+  font-family: 'OpenSans',sans-serif; 
+  font-weight: 900; 
+}
+
 nav ul { float: right; }
 nav li { margin-right: 10px; }
 
@@ -243,7 +247,7 @@ nav li:nth-of-type(2) a:hover {
 nav li:nth-of-type(3) a {
   border: 2px solid #217b57;
   color: #217b57;
-  letter-spacing: -0.5px;
+  letter-spacing: -1.5px;
 }
 
 nav li:nth-of-type(3) a:hover { 
@@ -257,6 +261,7 @@ nav li:nth-of-type(3) a:hover {
   margin-right: 8%; 
   float: right;
   font-size: 18px;
+  font-family: 'OpenSans',sans-serif;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -360,7 +365,7 @@ h2 {
   width: 39%;
   color: #217b57;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 900;
   letter-spacing: 0.5px;
 }
 
@@ -713,7 +718,8 @@ h6 {
     width: 60%;
     margin: 20px auto;
   }
-
+  
+  .header-top { text-align: right; }
   .btn-default { width: 100%; }
   .header-bottom { display: none; }
   header .wrapper { width: 93%; }
@@ -726,7 +732,7 @@ h6 {
   .dropdown { 
     width: 20%;
     padding: 20px 0;
-    margin-left: 15%;
+    margin-right: 25px;
   }
 
   h2 { width: 50%; }
@@ -824,6 +830,14 @@ h6 {
     width: 100%;
     font-size: 32px;
     letter-spacing: 0; 
+    text-align: center;
+  }
+
+  .banner-content {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 
   h3 { 
