@@ -879,7 +879,7 @@ h6 {
   background-color: #ebebeb;
 }
 
-.introduction h2 { 
+.introduction h1 { 
   width: 70%;
   font-family: 'OpenSans-Light',sans-serif;
   font-size: 67px;
@@ -1324,6 +1324,11 @@ h6 {
   text-align: left;
 }
 
+.why-switch .active {
+  background-color: #01adef;
+  color: #fff;
+}
+
 
 /*----------------------------------------------------*/
 
@@ -1350,7 +1355,13 @@ h6 {
 }
 
 /*-------------------------------------------------------*/
-
+  
+/*========== Can I switch Page ===========*/
+  
+  .can .active {
+    background-color: #01b053;
+    color: #fff;
+  }
 
 /*-----------responsive designs-------------------*/
 
