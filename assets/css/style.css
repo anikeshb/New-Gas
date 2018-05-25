@@ -380,11 +380,11 @@ h2 {
   position: absolute;
   z-index: 1;
   bottom: 10px;
-  left: 47%;
-  transform: translate(0,-50%);
+  left: 50%;
   color: #fff;
 }
 
+.angle-down img { transform: translateX(-50%); } 
 .capital { text-transform: uppercase; }
 
 h2 span:after {
