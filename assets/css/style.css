@@ -257,6 +257,7 @@ nav li:nth-of-type(3) a:hover {
   color: #fff;
 }
 
+nav .bold { text-transform: capitalize; }
 .header-bottom { padding-bottom: 13px; }
 
 .header-bottom a{
