@@ -1194,8 +1194,6 @@ h6 {
 /*-------------------------------------------------------*/
   
 
-.why-switch .fixed-width { width: 60%; }
-
 /*---------------banner section----------------*/
 
 .why-switch main h1 {
@@ -1437,3 +1435,64 @@ h6 {
     background-color: #01b053;
     color: #fff;
   }
+
+  .can main { margin-top: 124px; }
+
+  /*--------Introduction section page------------------------*/
+
+.intro {
+  padding: 68px 0;
+  background-color: #ebebeb;
+}
+
+.intro h1 {
+  max-width: 100%; 
+  width: 100%;
+  float: none;
+  font-family: 'OpenSans-Light',sans-serif;
+  font-size: 67px;
+  font-style: italic;
+  font-weight: 800;
+  color: #58595b; 
+  letter-spacing: 0;
+}
+
+.intro h2 {
+  width: 100%;
+  font-family: 'OpenSans-Light',sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 800;
+  color: #58595b; 
+  letter-spacing: 0;
+}
+
+.can .fixed-width {
+  width: 50%;
+  margin: auto;
+}
+
+.qimage h2 {
+    width: 100%;
+    margin: 50px 0 30px;
+    color: #111;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.qimage .blue-btn ,
+.body-content .blue-btn
+{
+  display: block;
+  text-align: center;
+}
+
+.qimage,
+.body-content { padding-bottom: 20px; }
+
+.can p {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 40px;
+}  
