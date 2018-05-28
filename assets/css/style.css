@@ -1357,8 +1357,9 @@ h6 {
 
   .why-switch .quote { 
     box-sizing: border-box;
-    position: static; 
     width: 100%;
+    position: static; 
+    right: 0;
   }
 
 }
