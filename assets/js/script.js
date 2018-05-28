@@ -87,7 +87,7 @@
 			});
 
 			var $scroll_div = $(".main-content");
-			$('.bounce').on('click resize' , function(e) {
+			$('.bounce').on('click' , function(e) {
 				e.preventDefault();
 				if($(window).width() > 980) {
 					$('html, body').animate({
@@ -100,11 +100,11 @@
 				} 
 			})
 
-			$('form').on('submit' , function() {
-				if($(this).siblings().hasClass('error')){
-					alert('This form can\'t be submitted');
-				}
-			});
+			// $('form').on('submit' , function() {
+			// 	if($(this).siblings().hasClass('error')){
+			// 		alert('This form can\'t be submitted');
+			// 	}
+			// });
 
 				// ------------------scroll-------------------------
 
