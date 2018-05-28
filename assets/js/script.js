@@ -89,7 +89,11 @@
 		    }	
 	    });
 
-		$('.quote').draggable();        
+		$('.quote').draggable(); 
+
+    $( "#accordion" ).accordion({
+      collapsible: true
+	   });      
 		
 		$('#name').on('focusout', function() {
 				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
