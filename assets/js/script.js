@@ -89,9 +89,9 @@
 		    }	
 	    });
 
-
-
-			$('#name').on('focusout', function() {
+		$('.quote').draggable();        
+		
+		$('#name').on('focusout', function() {
 				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
 	    		reg1 = /^[^<>*?]+$/;
 				if($(this).val() == ""){

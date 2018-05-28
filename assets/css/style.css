@@ -958,6 +958,16 @@ h6 {
   right: -150px;
   top: 30%;
   box-shadow: 0 0 41px -8px rgba(0,0,0,.75);
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.quote:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .quote p {
