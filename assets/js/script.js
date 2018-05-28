@@ -100,11 +100,11 @@
 				} 
 			})
 
-			// $('form').on('submit' , function() {
-			// 	if($(this).siblings().hasClass('error')){
-			// 		alert('This form can\'t be submitted');
-			// 	}
-			// });
+			$('form').on('submit' , function() {
+				if($(this).siblings().hasClass('error')){
+					alert('This form can\'t be submitted');
+				}
+			});
 
 				// ------------------scroll-------------------------
 
