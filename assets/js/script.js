@@ -7,8 +7,12 @@
 		$('.quote').draggable(); 
 
     $( "#accordion" ).accordion({
-      collapsible: true
-	   });      
+      collapsible: true,
+      active: false,
+    	icons: false,  
+      heightStyle: "content"
+	  });      
+
 		
 		$('#name').on('focusout', function() {
 				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,

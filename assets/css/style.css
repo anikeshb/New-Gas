@@ -1439,7 +1439,9 @@ h6 {
     color: #fff;
   }
 
-  .can main { margin-top: 124px; }
+  .can main {
+    padding-bottom: 10px; 
+    margin-top: 124px; }
 
   /*--------Introduction section page------------------------*/
 
@@ -1535,14 +1537,19 @@ h6 {
   background-color: #111;
 }
 
+.accordion { padding-bottom: 20px; }
+
 .visible {
   padding: 10px;
+  margin: 15px 0;
   display: block;
   background-color: #01adef;
   color: #fff;
+  cursor: pointer;
   font-family: 'OpenSans',sans-serif;
   font-size: 20px;
   font-weight: 900;
+  outline: none;
   text-transform: uppercase;
 }
 
@@ -1555,4 +1562,64 @@ h6 {
   font-style: italic;
   text-align: right;
 }
+
+.visible:after {
+  content: '\f067';
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  color: #fff;
+  font: normal 900 16px 'Font Awesome\ 5 Free';
+}
+
+.ui-state-active:after { content: '\f068'; }
+
+@media screen and (max-width: 980px) { 
+
+.can main { margin-top: 65px; }
+
+}  
+
+@media screen and (max-width: 600px) { 
+
+  .intro { 
+    padding: 20px 0;
+    text-align: center; 
+  }
+  
+  .intro .wrapper { width: 100%; }
+  .intro h1 { font-size: 26px; }
+  .intro h2 { font-size: 22px; }
+  
+  .can .fixed-width { width: 100%; }
+  
+  .qimage h2,
+  .can p { 
+    font-size: 20px; 
+    line-height: 28px;
+  }
+
+  .can h3 { 
+    margin: 10px 0; 
+    font-size: 23px;
+  }
+
+  .can .blue-btn { margin: 20px 0; }
+
+  .visible { 
+    font-size: 18px;
+    font-weight: 400; 
+  }
+
+  .stats li {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .stats li:before {
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+  }
+}  
 /*-----------------------------------------------------*/
