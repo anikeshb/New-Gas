@@ -203,7 +203,7 @@ h1 {
 
 nav {
   box-sizing: border-box;
-  width: 70%;
+  width: 69%;
   padding: 20px 0 13px;
   vertical-align: top;
 }
@@ -883,14 +883,15 @@ h6 {
 }
 
 @media screen and (max-width: 600px) {
-
-  .mob { display: block; }
+  
+  .tab { display: block; }
 
   .desktop,
-  .tab {
+  .mob {
     display: none;
   }
-  
+
+
   .main-content .tab { display: block; }    
   .align-left{ float: none; }
   .contact-number { font-size: 18px; }
