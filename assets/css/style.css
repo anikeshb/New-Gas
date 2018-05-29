@@ -134,7 +134,15 @@ sub { bottom: -.25em; }
 
  /*=========generic==============*/
 
-* { font-family: 'OpenSans-Light', sans-serif; }
+* {  
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  outline: 0 none!important;
+}
+
 body { font-family: 'OpenSans-Light', sans-serif; }
 
 a {
@@ -1045,10 +1053,10 @@ h6 {
 
   .how .quote { 
     box-sizing: border-box;
-    position: static; 
+    position: static !important; 
     width: 100%;
   } 
-
+  
   .uvideo { width: 100%; }
 }
 
@@ -1359,8 +1367,7 @@ h6 {
   .why-switch .quote { 
     box-sizing: border-box;
     width: 100%;
-    position: static; 
-    right: 0;
+    position: static !important; 
   }
 
 }
