@@ -171,15 +171,6 @@
 							
 		});
 
- 		$(window).on('load resize' , function() {
- 			if($(window).width() > 980) {
-			$('.quote').draggable();        
-		    } else {
-		    	$( ".quote" ).draggable( "destroy" );
-		    }
- 		});
-
-
 
  	})(jQuery);
 
