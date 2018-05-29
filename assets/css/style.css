@@ -525,7 +525,7 @@ form input{ display: block; }
 .new-line { display: block; }
 
 .footer-top .bold { 
-  display: block; 
+  display: inline-block; 
   font-weight: 700;
 }
 
@@ -632,7 +632,7 @@ h6 {
 }
 
 .footer-links li a {
-  display: block;
+  display: inline-block;
   color: #fff;
   letter-spacing: -0.8px;
   text-transform: capitalize;
@@ -1113,8 +1113,8 @@ h6 {
 
 .why-switch .content p{ 
   margin: 25px 0;
+  font-family: 'Open-sans',sans-serif;
   font-size: 30px;
-  font-weight: 900;
   line-height: 44px;
 }
 
