@@ -180,6 +180,12 @@ ul li {
   top: -90px; 
   visibility: hidden;}
 
+.desktop { display: block; }
+
+.tab,
+.mob {
+  display: none;
+}
 /*-----------header----------------*/
 
 h1, nav{ display: inline-block; }
@@ -597,6 +603,7 @@ textarea {
   font-weight: 900;
   font-style: italic;
   text-align: center;
+  -webkit-appearance: none;
   transition: ease-in 0.2s;
   -moz-transition: 0.2s ease-in;
   -webkit-transition: 0.2 ease-in;
@@ -794,7 +801,6 @@ h6 {
   }
   
   h4 { font-size: 27px; }
-  .main-content .image img{ width: auto; }
 
   .main-content li:nth-of-type(2n+1) .content {
     left: 50%;
@@ -847,6 +853,13 @@ h6 {
 
 @media screen and (max-width: 768px) {
 
+  .tab { display: block; }
+
+  .desktop,
+  .mob {
+    display: none;
+  }
+
   h2 { 
     width: 100%;
     font-size: 32px;
@@ -876,18 +889,26 @@ h6 {
 }
 
 @media screen and (max-width: 600px) {
-    
-    .align-left{ float: none; }
-    .contact-number { font-size: 18px; }
-        
-    .footer-logo,
-    .social-icons {
-      width: 90%;
-      padding: 20px 0;
-      margin: 0 auto;
-      display: block;
-      text-align: center;
-    }
+
+  .mob { display: block; }
+
+  .desktop,
+  .tab {
+    display: none;
+  }
+  
+  .main-content .tab { display: block; }    
+  .align-left{ float: none; }
+  .contact-number { font-size: 18px; }
+      
+  .footer-logo,
+  .social-icons {
+    width: 90%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
 
 } 
 
