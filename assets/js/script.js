@@ -5,8 +5,12 @@
 		$(window).on('load', function() {
 
 			if($(window).width() > 1024) {
-				$('.quote').draggable(); 
-			}	
+					$('.quote').draggable();
+			}	else if($(window).width() < 1024 || $(window).width() > 980) {
+				$('.quote').on('touchstart touchmove touchend', function() {
+					$('.quote').draggable(); 
+				});
+			}
 
 	    $( "#accordion" ).accordion({
 	      collapsible: true,

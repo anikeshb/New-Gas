@@ -122,14 +122,6 @@ sub { bottom: -.25em; }
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
   
-  @font-face {
-    font-family: OpenSans-Light;
-    src: url('../fonts/OpenSans-Light.eot'),
-         url('../fonts/OpenSans-Light.svg'),
-         url('../fonts/OpenSans-Light.ttf'),
-         url('../fonts/OpenSans-Light.woff');
-  }
-
 
 
  /*=========generic==============*/
@@ -143,7 +135,7 @@ sub { bottom: -.25em; }
   outline: 0 none!important;
 }
 
-body { font-family: 'OpenSans-Light', sans-serif; }
+body { font-family: 'OpenSans', sans-serif; }
 
 a {
   color: #111;
@@ -385,7 +377,6 @@ h2 {
   width: 39%;
   color: #217b57;
   font-size: 40px;
-  font-weight: 900;
   letter-spacing: 0.5px;
 }
 
@@ -938,20 +929,16 @@ h6 {
   max-width: 100%; 
   width: 70%;
   float: none;
-  font-family: 'OpenSans-Light',sans-serif;
   font-size: 67px;
   font-style: italic;
-  font-weight: 800;
   color: #58595b; 
   letter-spacing: 0;
 }
 
 .how .introduction p {
   width: 75%;
-  font-family: 'OpenSans-Light',sans-serif;
   font-size: 40px;
   font-style: italic;
-  font-weight: 800;
   color: #58595b; 
   letter-spacing: 0;
 }
@@ -1015,7 +1002,6 @@ h6 {
   margin: 50px 0 30px;
   color: #111;
   font-size: 30px;
-  font-weight: 700;
   text-align: left;
   text-transform: uppercase;
 }
@@ -1026,7 +1012,6 @@ h6 {
 
 .how .details p {
   font-size: 30px;
-  font-weight: 900;
   line-height: 40px;
 }
 
@@ -1036,7 +1021,6 @@ h6 {
   margin: 25px 0;
   display: block;
   font-size: 30px;
-  font-weight: 900;
   line-height: 40px;
 }
 
@@ -1054,7 +1038,6 @@ h6 {
 .how .details li a {
   display: inline;
   color: #2790be;
-  font-weight: 700;
   text-decoration: underline;
 }
 
@@ -1142,7 +1125,6 @@ h6 {
 .why-switch .content a { 
   display: inline; 
   color: #2790be;
-  font-weight: 900;
   text-decoration: underline;
 }
 
@@ -1233,10 +1215,9 @@ h6 {
   max-width: 100%; 
   width: 100%;
   float: none;
-  font-family: 'OpenSans-Light',sans-serif;
+  font-family: 'OpenSans',sans-serif;
   font-size: 67px;
   font-style: italic;
-  font-weight: 800;
   color: #58595b; 
   letter-spacing: 0;
 }
@@ -1290,7 +1271,6 @@ h6 {
 
 .why-switch main p {
   font-size: 30px;
-  font-weight: 900;
   line-height: 44px;
 }
 
@@ -1484,22 +1464,20 @@ h6 {
   max-width: 100%; 
   width: 100%;
   float: none;
-  font-family: 'OpenSans-Light',sans-serif;
   font-size: 67px;
   font-style: italic;
-  font-weight: 800;
   color: #58595b; 
   letter-spacing: 0;
+  line-height: 69px;
 }
 
 .intro h2 {
   width: 100%;
-  font-family: 'OpenSans-Light',sans-serif;
   font-size: 40px;
   font-style: italic;
-  font-weight: 800;
   color: #58595b; 
   letter-spacing: 0;
+  line-height: 69px;
 }
 
   /*-----------------------------------------------------*/
@@ -1513,12 +1491,11 @@ h6 {
 }
 
 .qimage h2 {
-    width: 100%;
-    margin: 50px 0 30px;
-    color: #111;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: left;
+  width: 100%;
+  margin: 50px 0 30px;
+  color: #111;
+  font-size: 30px;
+  text-align: left;
 }
 
 .qimage .blue-btn ,
@@ -1533,7 +1510,6 @@ h6 {
 
 .can p {
   font-size: 30px;
-  font-weight: 900;
   line-height: 40px;
 }  
 
@@ -1542,7 +1518,7 @@ h6 {
   color: #111;
   font-family: 'OpenSans',sans-serif;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 700;
   text-align: left;
   text-transform: uppercase;
 }
@@ -1578,7 +1554,7 @@ h6 {
   cursor: pointer;
   font-family: 'OpenSans',sans-serif;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
   outline: none;
   text-transform: uppercase;
 }
@@ -1613,13 +1589,19 @@ h6 {
 @media screen and (max-width: 600px) { 
 
   .intro { 
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center; 
   }
   
   .intro .wrapper { width: 100%; }
-  .intro h1 { font-size: 26px; }
-  .intro h2 { font-size: 22px; }
+  .intro h1 { 
+    font-size: 26px; 
+    line-height: 17px;
+  }
+  .intro h2 { 
+    font-size: 22px; 
+    line-height: 17px;
+  }
   
   .can .fixed-width { width: 100%; }
   
