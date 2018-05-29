@@ -88,8 +88,6 @@
 		      });
 		    }	
 	    });
-
-		$('.quote').draggable();        
 		
 		$('#name').on('focusout', function() {
 				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
@@ -188,6 +186,15 @@
 
 				
 		});
+
+ 		$(window).on('load resize' , function() {
+ 			if($(window).width() > 980) {
+			$('.quote').draggable();        
+		    } else {
+		    	$( ".quote" ).draggable( "destroy" );
+		    }
+ 		});
+
 
 
  	})(jQuery);
