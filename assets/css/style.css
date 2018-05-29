@@ -400,11 +400,10 @@ h2 {
   position: absolute;
   z-index: 3;
   bottom: 10px;
-  left: 50%;
+  left: 45%;
   color: #fff;
 }
 
-.angle-down img { transform: translateX(-50%); } 
 .capital { text-transform: uppercase; }
 
 h2 span:after {
