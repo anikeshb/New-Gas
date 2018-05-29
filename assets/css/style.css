@@ -1056,15 +1056,6 @@ h6 {
   .introduction h1,
   .how .introduction p {  width: 100%;  }
   .quote { cursor: initial; }
-
-  .how .quote ,
-  .why-switch .quote { 
-    width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box;
-    position: static !important; 
-    width: 100%;
-  } 
   
   .uvideo { width: 100%; }
 }
@@ -1454,12 +1445,20 @@ h6 {
   }
 }
 
-@media screen and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) {
   .why-switch .quote {
     box-sizing: border-box;
-    width: 100%;
+    width: 100% !important;
+    height: auto !important;
     position: static !important;
-  }  
+  } 
+
+  .how .quote {
+    box-sizing: border-box;
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;
+  } 
 }
 
 
