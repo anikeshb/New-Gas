@@ -20,13 +20,11 @@
 				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
 	    		reg1 = /^[^<>*?]+$/;
 				if($(this).val() == ""){
-					$(this).next('span.error').remove();
-					$('<span class="error">Field can\'t be empty</span>').insertAfter("#name");
+					$(this).next('span.error').html("Field can\'t be empty");
 				} else if($(this).val().length < 4 ||!$(this).val().match(reg_name) || !$(this).val().match(reg1)) {
-					$(this).next('span.error').remove();
-					$('<span class="error">Please enter valid input</span>').insertAfter("#name");
+					$(this).next('span.error').html("Please enter valid input");
 				} else {
-					$(this).next('span.error').remove();
+					$(this).next('span.error').html("");
 				}
 			});
 
@@ -34,13 +32,11 @@
 				var reg_add = /^[a-zA-Z0-9-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
     			reg1 = /^[^<>*?$#%]+$/;
 				if($(this).val() == ""){
-					$(this).next('span.error').remove();
-					$('<span class="error">Field can\'t be empty</span>').insertAfter("#address");
+					$(this).next('span.error').html("Field can\'t be empty");
 				} else if($(this).val().length < 4 || !$(this).val().match(reg_add) || !$(this).val().match(reg1)) {
-					$(this).next('span.error').remove();
-					$('<span class="error">Please enter valid input</span>').insertAfter("#address");
+					$(this).next('span.error').html("Please enter valid input");
 				} else {
-					$(this).next('span.error').remove();
+					$(this).next('span.error').html("");
 				}
 			});
 
@@ -48,13 +44,11 @@
 				var reg_add = /^[a-zA-Z0-9-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
     			reg1 = /^[^<>*?$#%]+$/;
 				if($(this).val() == ""){
-					$(this).next('span.error').remove();
-					$('<span class="error">Field can\'t be empty</span>').insertAfter("#city");
+					$(this).next('span.error').html("Field can\'t be empty");
 				} else if($(this).val().length < 4 || !$(this).val().match(reg_add) || !$(this).val().match(reg1)) {
-					$(this).next('span.error').remove();
-					$('<span class="error">Please enter valid input</span>').insertAfter("#city");
+					$(this).next('span.error').html("Please enter valid input");
 				} else {
-					$(this).next('span.error').remove();
+					$(this).next('span.error').html("");
 				}
 			});
 
@@ -63,31 +57,26 @@
 				var reg_tel = /^[0-9-\s\-()+\s/]+$/,
     			reg1 = /^[^!@#$%^&,_=;:"'./{}[\]|\\`~<>*?]+$/;
 				if($(this).val() == ""){
-					$(this).next('span.error').remove();
-					$('<span class="error">Field can\'t be empty</span>').insertAfter("#phone");
+					$(this).next('span.error').html("Field can\'t be empty");
 				} else if(!$(this).val().match(reg_tel) || !$(this).val().match(reg1)) {
-					$(this).next('span.error').remove();
-					$('<span class="error">Please enter valid input</span>').insertAfter("#phone");
+					$(this).next('span.error').html("Please enter valid input");
 				} else if ($(this).val().length < 10 || $(this).val().length > 10) {
-					$(this).next('span.error').remove();
-					$('<span class="error">Please enter valid input</span>').insertAfter("#phone");
+					$(this).next('span.error').html("Please enter valid input");
 				}
 				else {
-					$(this).next('span.error').remove();
+					$(this).next('span.error').html("");
 				}
 			});
 			
 			$('#email').on('focusout', function() {
 				var reg_mail = /^[\s]{0,}[a-zA-Z0-9.!#$%&’();:"',[\]\\+/=^_`{|}~-]+@[a-zA-Z0-9.!#$%&’();:"',[\]\\+/=^_`{|}~-]+(?:\.[a-zA-Z0-9.!#$%&’();:"',[\]\\+/=^_`{|}~-]+)+[\s]{0,}$/;
 				if($(this).val() == ""){
-					$(this).next('span.error').remove();
-					$('<span class="error">Field can\'t be empty</span>').insertAfter("#email");
+					$(this).next('span.error').html("Field can\'t be empty");
 				} else if(!$(this).val().match(reg_mail)) {
-					$(this).next('span.error').remove();
-					$('<span class="error">Please enter valid input</span>').insertAfter("#email");
+					$(this).next('span.error').html("Please enter valid input");
 				}
 				else {
-					$(this).next('span.error').remove();
+					$(this).next('span.error').html("");
 				}
 			});
 

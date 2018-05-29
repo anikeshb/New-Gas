@@ -571,12 +571,13 @@ textarea {
 }
 
 .error {
- display: block;
- color: #ff0000;
- font-size: 12px;
- font-family: sans-serif;
- position: relative;
- bottom: 10px;
+  height: 10px;
+  display: block;
+  color: #ff0000;
+  font-size: 12px;
+  font-family: sans-serif;
+  position: relative;
+  bottom: 10px;
 }
 
 .btn-sub {
