@@ -1046,12 +1046,13 @@ h6 {
   .how main { margin-top: 63px; }  
 
   .introduction h1,
-  .how .introduction p { 
-    width: 100%; 
-    
-  }
+  .how .introduction p {  width: 100%;  }
+  .quote { cursor: initial; }
 
-  .how .quote { 
+  .how .quote ,
+  .why-switch .quote { 
+    width: 100% !important;
+    height: auto !important;
     box-sizing: border-box;
     position: static !important; 
     width: 100%;
