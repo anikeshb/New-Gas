@@ -1441,6 +1441,17 @@ h6 {
 @media screen and (max-width: 750px) and (orientation: landscape) {
   .bg-image { overflow: hidden; }
   .bg-image img { height: auto; }
+  .angle-down {
+    z-index: 5;
+    bottom: 15px;
+  } 
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .angle-down {
+    z-index: 5;
+    bottom: 75px;
+  } 
 }
 
 /*------------------------------------------------*/
