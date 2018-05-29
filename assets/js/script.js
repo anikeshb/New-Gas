@@ -4,14 +4,15 @@
 
 		$(window).on('load', function() {
 
+
 		$('.quote').draggable(); 
 
-    $( "#accordion" ).accordion({
-      collapsible: true,
-      active: false,
-    	icons: false,  
-      heightStyle: "content"
-	  });      
+	    $( "#accordion" ).accordion({
+	      collapsible: true,
+	      active: false,
+	    	icons: false,  
+	      heightStyle: "content"
+		  });      
 
 		
 		$('#name').on('focusout', function() {
@@ -169,6 +170,15 @@
 				// ---------------------------------------------------
 							
 		});
+
+ 		$(window).on('load resize' , function() {
+ 			if($(window).width() > 980) {
+			$('.quote').draggable();        
+		    } else {
+		    	$( ".quote" ).draggable( "destroy" );
+		    }
+ 		});
+
 
 
  	})(jQuery);
