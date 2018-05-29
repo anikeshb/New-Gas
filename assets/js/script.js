@@ -4,8 +4,11 @@
 
 		$(window).on('load', function() {
 
-
-		$('.quote').draggable(); 
+		$(window).on('resize', function() {
+			if($(window).width() > 1024) {
+				$('.quote').draggable(); 
+			}
+		});	
 
 	    $( "#accordion" ).accordion({
 	      collapsible: true,
