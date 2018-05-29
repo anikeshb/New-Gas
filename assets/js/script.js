@@ -28,7 +28,7 @@
 	    	e.stopPropagation();
 	     })
 
-	    $('body').on('click', function() {
+	    $('body').on('click touchstart', function() {
 	    	if($('.hamburger').hasClass('cross')){
 	    		$('.hamburger').removeClass('cross');
 	    		$('nav').removeClass('mobile');
