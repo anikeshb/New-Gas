@@ -15,6 +15,32 @@
 	      heightStyle: "content"
 		  });      
 
+
+	    $('.hamburger').click(function(e) {
+	    	e.stopPropagation();
+	    });
+
+	     $('.cross').click(function(e) {
+	    	e.stopPropagation();
+	    });
+
+	     $('.dropdown').click(function(e) {
+	    	e.stopPropagation();
+	     })
+
+	    $('body').on('click', function() {
+	    	if($('.hamburger').hasClass('cross')){
+	    		$('.hamburger').removeClass('cross');
+	    		$('nav').removeClass('mobile');
+	    		$('html').removeClass('hide');
+	    	}
+
+	    	if($('.dropdown').hasClass('open')){
+	    		$('.dropdown').removeClass('open');
+	    	}
+	   
+
+	    }); 
 		
 		$('#name').on('focusout', function() {
 				var reg_name = /^[a-zA-Z-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
