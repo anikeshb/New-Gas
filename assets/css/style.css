@@ -133,9 +133,7 @@ ul li {
 #sp-offers,
 #finance,
 #benefits-anchor {
-  position: relative;
-  top: -90px; 
-  visibility: hidden;}
+ visibility: hidden;}
 
 .desktop { display: block; }
 
@@ -802,7 +800,7 @@ h6 {
 
   #sp-offers,#finance,#benefits-anchor {
     position: relative;
-    top: -65px; 
+    top: -10vh; 
     visibility: hidden;
   }
   

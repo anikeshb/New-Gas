@@ -1,4 +1,4 @@
- 	// ------------------Validation------------------------
+ 	// ------------------Js------------------------
 
  	(function($) {
 
@@ -28,7 +28,7 @@
 	    	e.stopPropagation();
 	     })
 
-	    $('body').on('click touchstart', function() {
+	    $('body').on('click', function() {
 	    	if($('.hamburger').hasClass('cross')){
 	    		$('.hamburger').removeClass('cross');
 	    		$('nav').removeClass('mobile');
@@ -38,8 +38,6 @@
 	    	if($('.dropdown').hasClass('open')){
 	    		$('.dropdown').removeClass('open');
 	    	}
-	   
-
 	    }); 
 		
 		$('#name').on('focusout', function() {
@@ -106,7 +104,7 @@
 				}
 			});
 
-			var $scroll_div = $(".main-content");
+			var $scroll_div = $('.main-content');
 			$('.bounce').on('click' , function(e) {
 				e.preventDefault();
 				if($(window).width() > 980) {
@@ -130,9 +128,9 @@
 
 				function scroll() {
 				  if (window.pageYOffset == 0) {
-				    navbar[0].classList.remove("sticky");
+				    navbar[0].classList.remove('sticky');
 				  } else {
-				    navbar[0].classList.add("sticky");
+				    navbar[0].classList.add('sticky');
 				  }
 				}
 
@@ -166,8 +164,8 @@
 				var bar=document.getElementsByClassName('hamburger');
 			  var menu=document.getElementsByTagName('nav');
 
-			  bar[0].addEventListener("click",function(){mobileMenu();});
-				
+			  bar[0].addEventListener('click',function(){mobileMenu();});
+
 				// ---------------------------------------------
 
 				// ------------------Dropdown------------------------
@@ -175,15 +173,15 @@
 				function show() {
 					if(checkClass2[0]=='hide') {
 						body.classList.toggle('hide');
-						menu[0].classList.toggle("mobile");
-						bar[0].classList.toggle("cross");
+						menu[0].classList.toggle('mobile');
+						bar[0].classList.toggle('cross');
 						dropdown[0].classList.toggle('open');
 					}else	dropdown[0].classList.toggle('open');
 				}
 
 				dropdown[0].addEventListener('click',function() { show(); });
-				
-				// ---------------------------------------------------
+
+			// ---------------------------------------------------
 							
 		});
 
