@@ -133,7 +133,10 @@ ul li {
 #sp-offers,
 #finance,
 #benefits-anchor {
- visibility: hidden;}
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
 
 .desktop { display: block; }
 
@@ -376,7 +379,7 @@ h2 span:after {
 /*---------------main content---------------------*/
 
 
-.main-content { padding: 10px 0 15px; }
+.main-content { padding: 40px 0; }
 .main-content .wrapper { width: 84.5%; }
 
 h3:first-letter { text-transform: uppercase; }
@@ -895,7 +898,9 @@ h6 {
 
 .introduction h1 {
   max-width: 100%; 
-  width: 70%;
+  width: 100%;
+  padding-top: 0;
+  margin-bottom: 5px;
   float: none;
   font-size: 67px;
   font-style: italic;
@@ -1450,6 +1455,7 @@ h6 {
 .intro h1 {
   max-width: 100%; 
   width: 100%;
+  padding: 0;
   float: none;
   font-size: 67px;
   font-style: italic;
