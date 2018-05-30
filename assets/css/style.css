@@ -130,12 +130,20 @@ ul li {
 
 .hide { overflow: hidden; }
 
-#sp-offers,
+/*#sp-offers,
 #finance,
 #benefits-anchor {
   position: relative;
-  top: -120px;
   visibility: hidden;
+}*/
+
+#sp-offers,
+#finance,
+#benefits-anchor
+ { 
+  display: inline-block;
+  position: relative;
+  bottom: 122px;
 }
 
 .desktop { display: block; }
@@ -233,7 +241,7 @@ nav li:nth-of-type(3) a:hover {
 nav .bold { text-transform: capitalize; }
 .header-bottom { padding-bottom: 13px; }
 
-.header-bottom a{
+.header-bottom span{
   margin-right: 8%; 
   float: right;
   font-size: 18px;
