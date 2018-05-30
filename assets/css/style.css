@@ -1,32 +1,6 @@
 @charset "utf-8";
 
-/*------------------------------------------------------------------
-  [Table of contents]
-  * To keep an overview of structure of your code, we make use of table of 
-  * content. Table of content is use display the overall tree structure of your
-  * Layout. 
-  * (NOTE: Remove this commented code once you start developing the code.
-  * Remove the following table of content and add your own as this is just and 
-  * example to let you know)
 
-  1. CSS Reset Code
-    1.1. Eric Meyers Reset/HTML5 display-role reset for older browsers
-    1.2. Clear Fix
-    1.3. Font class declaration
-  2. Body
-  3. Header / .header
-    2.1. Navigation / .navbar
-  4. Content / .content
-    4.1. Left column / .LEFTCOLUMN
-    4.2. Right column / .rightcolumn
-    4.3. Sidebar / .sidebar
-      4.3.1. RSS / .rss
-      4.3.2. Search / .search
-      4.3.3. Boxes / .box
-      4.3.4. Sideblog / .sideblog
-      4.3.5. Advertisements / .ads
-  5. Footer / .footer
-  ------------------------------------------------------------------*/
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -1397,8 +1371,8 @@ h6 {
   .blue-btn { margin: 10px; }
 
   .why-switch main li:before { 
-    height: 8px;
     width: 8px;
+    height: 8px;
     margin-right: 10px; 
   }
 
@@ -1472,16 +1446,16 @@ h6 {
    3. Can I switch Page
    ========================================================================== */
 
-  .can .active {
-    background-color: #01b053;
-    color: #fff;
-  }
+.can .active {
+  background-color: #01b053;
+  color: #fff;
+}
 
-  .can main {
-    padding-bottom: 10px; 
-    margin-top: 124px; }
+.can main {
+  padding-bottom: 10px; 
+  margin-top: 124px; }
 
-  /*--------Introduction section page------------------------*/
+/*--------Introduction section page------------------------*/
 
 .intro {
   padding: 68px 0;
