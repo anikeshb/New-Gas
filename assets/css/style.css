@@ -100,15 +100,6 @@ sub { bottom: -.25em; }
 
  /*=========generic==============*/
 
-* {  
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  outline: 0 none!important;
-}
-
 body { font-family: 'OpenSans', sans-serif; }
 
 a {
@@ -152,6 +143,7 @@ ul li {
 .mob {
   display: none;
 }
+
 /*-----------header----------------*/
 
 h1, nav{ display: inline-block; }
@@ -275,7 +267,7 @@ nav .bold { text-transform: capitalize; }
 }
 
 .dropdown a:before { 
-  font-family: "Font Awesome\ 5 Free"; 
+  font-family: 'Font Awesome\ 5 Free'; 
   font-weight: 900;
 }
 
@@ -921,9 +913,10 @@ h6 {
   letter-spacing: 0;
 }
 
-/*--------Information section page------------------------*/
-
 .information { padding: 100px 0 10px; }
+
+/*--------------------------------*/
+
 
 .video-container {
   height: 0; 
@@ -1197,7 +1190,7 @@ h6 {
   color: #58595b;
   font-family: 'OpenSans',sans-serif;
   font-size: 60px;
-  font-style: none;
+  font-style: normal;
   font-weight: 900;
   letter-spacing: -0.5px;
   text-transform: capitalize;
