@@ -158,7 +158,7 @@ ul li {
 h1, nav{ display: inline-block; }
 
 header { 
-  border-bottom: 20px solid #01adef;
+  border-bottom: 20px solid #00aef0;
   position: fixed;
   z-index: 4;
   top: 0;
@@ -187,11 +187,11 @@ nav {
   box-sizing: border-box;
   width: 180px;
   padding: 10px 0;
-  border: 2px solid #01b053;
+  border: 2px solid #00b156;
   border-radius: 30px; 
   display: block;
   background-color: #fff;
-  color: #01b053;
+  color: #00b156;
   font-size: 22px;
   text-align: center;
 }
@@ -206,35 +206,35 @@ nav ul { float: right; }
 nav li { margin-right: 10px; }
 
 nav li:nth-of-type(1) a {
-  border: 2px solid #01adef;
-  color: #01adef;
+  border: 2px solid #00aef0;
+  color: #00aef0;
   letter-spacing: -0.5px;
 }
 
 nav li:nth-of-type(1) a:hover { 
-  background-color: #01adef;
+  background-color: #00aef0;
   color: #fff;
 }
 
 nav li:nth-of-type(2) a {
-  border: 2px solid #01b053;
-  color: #01b053;
+  border: 2px solid #00b156;
+  color: #00b156;
   letter-spacing: -0.5px;
 }
 
 nav li:nth-of-type(2) a:hover { 
-  background-color: #01b053;
+  background-color: #00b156;
   color: #fff;
 }
 
 nav li:nth-of-type(3) a {
-  border: 2px solid #217b57;
-  color: #217b57;
+  border: 2px solid #008651;
+  color: #008651;
   letter-spacing: -1.5px;
 }
 
 nav li:nth-of-type(3) a:hover { 
-  background-color: #217b57;
+  background-color: #008651;
   color: #fff;
 }
 
@@ -242,7 +242,7 @@ nav .bold { text-transform: capitalize; }
 .header-bottom { padding-bottom: 13px; }
 
 .header-bottom span{
-  margin-right: 8%; 
+  margin-right: 9%; 
   float: right;
   font-size: 18px;
   font-family: 'OpenSans',sans-serif;
@@ -251,8 +251,8 @@ nav .bold { text-transform: capitalize; }
 }
 
 .active {
-  border: 2px solid #01adef;
-  background-color: #01adef;
+  border: 2px solid #00aef0;
+  background-color: #00aef0;
   color: #fff;
 }
 
@@ -305,11 +305,11 @@ nav .bold { text-transform: capitalize; }
 }
 
 .dropdown li:first-child a{  
-  background-color: #01b053; 
+  background-color: #00b156; 
   text-align: left;
 }
 
-.dropdown li:last-child a{  background-color: #01adef; }
+.dropdown li:last-child a{  background-color: #00aef0; }
 .dropdown li:first-child a:hover{  background-color: #217b56; }
 .dropdown li:last-child a:hover{  background-color: #0d7aa4; }
 
@@ -350,12 +350,12 @@ h2:first-letter { text-transform: uppercase; }
 
 h2 {
   width: 39%;
-  color: #217b57;
+  color: #008651;
   font-size: 40px;
   letter-spacing: 0.5px;
 }
 
-.sticky { border-bottom: 5px solid #01adef; }
+.sticky { border-bottom: 5px solid #00aef0; }
 .padding { margin-top: 125px; }
 
 
@@ -378,7 +378,7 @@ h2 span:after {
   height: 3px;
   display: inline-block;
   vertical-align: middle;
-  background-color: #217b57;
+  background-color: #008651;
 }
 
 /*------------------------------------------*/
@@ -387,7 +387,7 @@ h2 span:after {
 /*---------------main content---------------------*/
 
 
-.main-content { padding: 40px 0; }
+.main-content { padding: 16px 0; }
 .main-content .wrapper { width: 84.5%; }
 
 h3:first-letter { text-transform: uppercase; }
@@ -395,7 +395,7 @@ h3:first-letter { text-transform: uppercase; }
 h3 {
   width: 60%;
   margin: 0 auto;
-  color: #01adef;
+  color: #00aef0;
   font-size: 32px;
   line-height: 50px;
   text-align: center;
@@ -433,8 +433,8 @@ h4 { font-size: 49px; }
 }
 
 .main-content .content a:hover {
-  border: 2px solid #01adef;
-  background-color: #01adef;
+  border: 2px solid #00aef0;
+  background-color: #00aef0;
   color: #fff;
 }
 
@@ -456,7 +456,7 @@ h4 { font-size: 49px; }
 
 .main-content li:nth-of-type(2n+1) .content { left: 5%; }
 .main-content li:nth-of-type(2n) .content { right: 5%; }
-.main-content li:last-child .btn { margin-top: 5px; }
+.main-content li:last-child .btn { margin-top: 12px; }
 
 /*------------------------------------------*/
 
@@ -515,14 +515,15 @@ form input{
   margin-bottom: 14px;
   border: none;
   display: block; 
+  font-family: 'OpenSans',sans-serif;
   font-size: 25px;
 }
 
 h5 {
-  color: #217b57;
+  color: #008651;
   font-size: 50px;
   line-height: 65px;
-  letter-spacing: -2.5px;
+  letter-spacing: -1.5px;
 }
 
 h5 .bold { 
@@ -559,17 +560,17 @@ textarea {
   width: 180px;
   height: auto;
   padding: 20px 0;
-  border: 2px solid #01adef;
+  border: 2px solid #00aef0;
   border-radius: 50px; 
   display: block;
-  vertical-align: middle;
   position: absolute;
   left: 10px;
-  top: 82%;
-  background-color: #01adef;
+  top: 73%;
+  background-color: #00aef0;
   color: #fff;
   font-size: 25px;
   font-weight: 900;
+  font-family: 'OpenSans',sans-serif;
   font-style: italic;
   text-align: center;
   -webkit-appearance: none;
@@ -579,9 +580,9 @@ textarea {
 }
 
 .btn-sub:hover { 
-  border: 2px solid #01adef;
+  border: 2px solid #00aef0;
   background-color: #fff;
-  color: #01adef;
+  color: #00aef0;
 }
 
 h6 {
@@ -765,8 +766,8 @@ h6 {
   .mobile { 
     max-height: 100%; 
     padding: 40px 0;
-    border-top: 2px solid  #01adef;
-    border-bottom: 2px solid  #01adef;
+    border-top: 2px solid  #00aef0;
+    border-bottom: 2px solid  #00aef0;
   }
   
   h4 { font-size: 27px; }
@@ -817,6 +818,7 @@ h6 {
   
   .dropdown ul { left: -30px; }
   .footer-list>li:not(:last-child) { border-bottom: 1px solid #fff; }
+  .footer-top .bold { display: block; }
 }
 
 
@@ -893,7 +895,7 @@ h6 {
 .how main { margin-top: 124px; }
 
 .how .active { 
-  background-color: #217b57;
+  background-color: #008651;
   color: #fff; 
 }
 
@@ -908,7 +910,7 @@ h6 {
   max-width: 100%; 
   width: 100%;
   padding-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   float: none;
   font-size: 67px;
   font-style: italic;
@@ -918,10 +920,11 @@ h6 {
 
 .how .introduction p {
   width: 75%;
+  color: #58595b; 
   font-size: 40px;
   font-style: italic;
-  color: #58595b; 
   letter-spacing: 0;
+  line-height: 53px;
 }
 
 .information { padding: 100px 0 10px; }
@@ -955,7 +958,7 @@ h6 {
   width: 60%;
   padding: 2%;
   position: absolute;
-  background-color: #217b57;
+  background-color: #008651;
   right: -150px;
   top: 30%;
   box-shadow: 0 0 41px -8px rgba(0,0,0,.75);
@@ -993,6 +996,7 @@ h6 {
 .how .details { padding: 80px 0; }
 
 .how .details p {
+  display: inline;
   font-size: 30px;
   line-height: 40px;
 }
@@ -1138,16 +1142,9 @@ h6 {
   text-decoration: underline;
 }
 
-.why-switch .disclaimer {
-  margin-bottom: 100px; 
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 700;
-  text-align: left;
-}
 
 .why-switch .active {
-  background-color: #01adef;
+  background-color: #00aef0;
   color: #fff;
 }
 
@@ -1158,7 +1155,7 @@ h6 {
 
 /*---------------------video section-----------------*/
 
-.why-switch .video { padding : 70px 0; }
+.why-switch .video { padding : 20px 0; }
 .why-switch .uvideo { margin: auto; }
 
 .why-switch .quote {
@@ -1186,7 +1183,7 @@ h6 {
 
 .why-switch main h1 {
   max-width: 100%; 
-  width: 100%;
+  width: 95%;
   float: none;
   font-family: 'OpenSans',sans-serif;
   font-size: 67px;
@@ -1271,7 +1268,6 @@ h6 {
 }
 
 .why-switch .disclaimer {
-  margin-bottom: 100px; 
   font-size: 20px;
   font-style: italic;
   font-weight: 700;
@@ -1307,11 +1303,12 @@ h6 {
 }
 
 .blue-btn a{
+  width: 300px;
   padding: 10px 20px;
   border: 2px solid transparent;
   border-radius: 30px;
   display: inline-block;
-  background-color: #01adef;
+  background-color: #00aef0;
   color: #fff;
   font-family: 'OpenSans',sans-serif;
   font-size: 22px;
@@ -1319,9 +1316,9 @@ h6 {
 }
 
 .blue-btn a:hover {
-  border: 2px solid #01adef;
+  border: 2px solid #00aef0;
   background-color: #fff;
-  color: #01adef;
+  color: #00aef0;
 }
 
 /*-------------------------------------------------*/
@@ -1445,7 +1442,7 @@ h6 {
    ========================================================================== */
 
 .can .active {
-  background-color: #01b053;
+  background-color: #00b156;
   color: #fff;
 }
 
@@ -1493,7 +1490,7 @@ h6 {
 
 .qimage h2 {
   width: 100%;
-  margin: 50px 0 30px;
+  margin-top: 50px;
   color: #111;
   font-size: 30px;
   text-align: left;
@@ -1550,7 +1547,7 @@ h6 {
   padding: 10px;
   margin: 15px 0;
   display: block;
-  background-color: #01adef;
+  background-color: #00aef0;
   color: #fff;
   cursor: pointer;
   font-family: 'OpenSans',sans-serif;
@@ -1595,10 +1592,13 @@ h6 {
   }
   
   .intro .wrapper { width: 100%; }
-  .intro h1 { 
+
+  .intro h1 {
+    margin-bottom: 15px; 
     font-size: 26px; 
     line-height: 17px;
   }
+
   .intro h2 { 
     font-size: 22px; 
     line-height: 17px;
