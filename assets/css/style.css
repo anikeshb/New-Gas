@@ -95,7 +95,14 @@ sub { bottom: -.25em; }
  * as this is just and example to let you know. If there is only one font family
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
-  
+  @font-face {
+    font-family: 'SlatePro';
+    src: url('../fonts/SlatePro.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/SlatePro.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/SlatePro.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/SlatePro.svg') format('svg'); /* Legacy iOS */
+  }
+
 
 
  /*=========generic==============*/
@@ -429,7 +436,7 @@ h4 { font-size: 49px; }
   display: block;
   color: #fff;
   font-size: 17px;
-  letter-spacing: -1px;
+  letter-spacing: 0;
 }
 
 .main-content .content a:hover {
@@ -445,7 +452,7 @@ h4 { font-size: 49px; }
 }
 
 .btn {
-  width: 160px; 
+  width: 180px; 
   margin: 25px auto;
   display: block;
 }
@@ -456,7 +463,6 @@ h4 { font-size: 49px; }
 
 .main-content li:nth-of-type(2n+1) .content { left: 5%; }
 .main-content li:nth-of-type(2n) .content { right: 5%; }
-.main-content li:last-child .btn { margin-top: 12px; }
 
 /*------------------------------------------*/
 
@@ -516,7 +522,7 @@ form input{
   border: none;
   display: block; 
   font-family: 'OpenSans',sans-serif;
-  font-size: 25px;
+  font-size: 21px ;
 }
 
 h5 {
@@ -611,7 +617,7 @@ h6 {
 .footer-links li a {
   display: inline-block;
   color: #fff;
-  letter-spacing: 0.2px;
+  font-family: 'SlatePro',sans-serif;
   text-transform: capitalize;
 }
 
@@ -875,7 +881,7 @@ h6 {
       
   .footer-logo,
   .social-icons {
-    width: 90%;
+    width: 72%;
     padding: 20px 0;
     margin: 0 auto;
     display: block;
@@ -1190,6 +1196,7 @@ h6 {
   font-style: italic;
   color: #58595b; 
   letter-spacing: 0;
+  text-align: left;
 }
 
 .why-switch  h2{
@@ -1389,15 +1396,18 @@ h6 {
     line-height: 24px;
   }
 
-  .why-switch .financing { padding-top: 30px; }
-  .why-switch .video { padding: 35px 0; }
-
+ .why-switch .video { padding: 35px 0; }
+ .why-switch .benfits .video { padding: 0 0 20px; }
+  
   .blue-btn a { 
     padding: 9px 11px;
     font-size: 14px;
   }
   
-  .merits h4 { font-size: 27px; }
+  .merits h4 { 
+    font-size: 27px; 
+    line-height: 30px;
+  }
 }
 
 @media screen and (max-width: 750px) and (orientation: landscape) {
@@ -1430,6 +1440,15 @@ h6 {
     height: auto !important;
     position: static !important;
   } 
+  
+  .bg-image { overflow: hidden; }
+  .tab { 
+    display: block; 
+    height: auto;  
+  }
+
+  .desktop,
+  .mob { display: none; }
 }
 
 /*------------------------------------------------*/
@@ -1587,7 +1606,7 @@ h6 {
 @media screen and (max-width: 600px) { 
 
   .intro { 
-    padding: 40px 0;
+    padding: 40px 10px;
     text-align: center; 
   }
   
@@ -1599,12 +1618,14 @@ h6 {
     line-height: 17px;
   }
 
-  .intro h2 { 
+  .intro h2 {
+    width: 75%;
+    margin: auto;
     font-size: 22px; 
-    line-height: 17px;
+    line-height: 25px;
   }
   
-  .can .fixed-width { width: 100%; }
+  .can .fixed-width { width: 80%; }
   
   .qimage h2,
   .can p { 
