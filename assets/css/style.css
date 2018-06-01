@@ -1246,7 +1246,7 @@ h6 {
   margin: 50px 0 30px;
   color: #111;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
   text-align: left;
   text-transform: uppercase;
 }
@@ -1300,10 +1300,10 @@ h6 {
 .merits { padding-bottom: 60px; }
 
 .merits h4 {
-  margin-bottom: 20px;
+  margin-top: 20px;
   font-family: 'Open Sans',sans-serif;
   font-size: 33px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .why-switch .merits li:before { display: none; }
