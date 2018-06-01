@@ -107,7 +107,7 @@ sub { bottom: -.25em; }
 
  /*=========generic==============*/
 
-body { font-family: 'OpenSans', sans-serif; }
+body { font-family: 'Open Sans', sans-serif; }
 
 a {
   color: #111;
@@ -205,7 +205,7 @@ nav {
 
 
 .bold {
-  font-family: 'OpenSans',sans-serif; 
+  font-family: 'Open Sans',sans-serif; 
   font-weight: 900; 
 }
 
@@ -252,7 +252,7 @@ nav .bold { text-transform: capitalize; }
   margin-right: 9%; 
   float: right;
   font-size: 18px;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -521,7 +521,7 @@ form input{
   margin-bottom: 14px;
   border: none;
   display: block; 
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 21px ;
 }
 
@@ -576,7 +576,7 @@ textarea {
   color: #fff;
   font-size: 25px;
   font-weight: 900;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-style: italic;
   text-align: center;
   -webkit-appearance: none;
@@ -596,6 +596,7 @@ h6 {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
+  font-family: 'SlatePro',sans-serif;
   letter-spacing: -0.5px;
   text-transform: capitalize;
 }
@@ -684,6 +685,14 @@ h6 {
 }
 
 /*-------------media queries---------------*/
+
+@media screen and (min-width: 1500px) {
+  .banner h2 {
+    font-size: 60px;
+    line-height: 71px;
+  }
+}
+
 
 @media screen and (max-width: 980px) {
 
@@ -874,7 +883,7 @@ h6 {
     display: none;
   }
 
-
+  .btn { margin: 14px auto; }
   .main-content .tab { display: block; }    
   .align-left{ float: none; }
   .contact-number { font-size: 18px; }
@@ -1095,12 +1104,12 @@ h6 {
 
 /*-----------content section----------------------*/
 
-.content { padding: 40px 0; }
+.content { padding: 35px 0; }
 .why-switch p:first-letter { text-transform: uppercase; }
 
 .why-switch .content p{ 
   margin: 25px 0;
-  font-family: 'Open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 30px;
   line-height: 44px;
 }
@@ -1191,7 +1200,7 @@ h6 {
   max-width: 100%; 
   width: 95%;
   float: none;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 67px;
   font-style: italic;
   color: #58595b; 
@@ -1203,7 +1212,7 @@ h6 {
   width: 100%;
   padding: 20px 0 10px;
   color: #58595b;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 900;
@@ -1226,11 +1235,11 @@ h6 {
 /*-----------offers section----------------------*/
 
 .why-switch .offers {
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   text-align: left;
 }
 
-.why-switch .financing { font-family: 'OpenSans',sans-serif; }
+.why-switch .financing { font-family: 'Open Sans',sans-serif; }
 
 .why-switch h2 {
   width: 100%;
@@ -1246,6 +1255,8 @@ h6 {
   font-size: 30px;
   line-height: 44px;
 }
+
+.why-switch main .benfits p { padding-top: 20px; }
 
 .camel { text-transform: capitalize; }
 
@@ -1290,7 +1301,7 @@ h6 {
 
 .merits h4 {
   margin-bottom: 20px;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 33px;
   font-weight: 900;
 }
@@ -1317,8 +1328,8 @@ h6 {
   display: inline-block;
   background-color: #00aef0;
   color: #fff;
-  font-family: 'OpenSans',sans-serif;
-  font-size: 22px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 20px;
   font-weight: 900;  
 }
 
@@ -1533,7 +1544,7 @@ h6 {
 .can h3 {
   margin: 50px 0 30px;
   color: #111;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-align: left;
@@ -1541,6 +1552,7 @@ h6 {
 }
 
 .project-list li { display: block; }
+.stats { margin-bottom: 20px; }
 
 .stats li {
   margin: 10px 0;
@@ -1569,7 +1581,7 @@ h6 {
   background-color: #00aef0;
   color: #fff;
   cursor: pointer;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 20px;
   font-weight: 700;
   outline: none;
@@ -1581,7 +1593,8 @@ h6 {
 
 .can .hidden p { 
   padding: 10px 0; 
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 800;
   font-style: italic;
   text-align: right;
 }
@@ -1600,6 +1613,11 @@ h6 {
 @media screen and (max-width: 980px) { 
 
 .can main { margin-top: 65px; }
+.intro h2 { 
+  margin-top: 20px;
+  text-align: left; 
+  line-height: 48px;
+}
 
 }  
 
@@ -1623,6 +1641,7 @@ h6 {
     margin: auto;
     font-size: 22px; 
     line-height: 25px;
+    text-align: center;
   }
   
   .can .fixed-width { width: 80%; }
