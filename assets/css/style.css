@@ -412,6 +412,8 @@ ul li {
     overflow: hidden;
   }
 
+  .main-content li img { transition: transform 5s; }
+
   .main-content .content {
     position: absolute;
     z-index: 1;
@@ -440,12 +442,18 @@ ul li {
     display: inline-block;
     margin-left: 5px;
   }
+  
 
   .btn {
     width: 180px; 
     margin: 25px auto;
     display: block;
   }
+
+ .main-content li:hover img{
+    transform: scale(1.5);
+    cursor: pointer;
+ } 
 
   .main-content li:nth-of-type(2n+1) .content { left: 5%; }
   .main-content li:nth-of-type(2n) .content { right: 5%; }
