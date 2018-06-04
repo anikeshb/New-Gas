@@ -411,8 +411,15 @@ ul li {
     display: block;
     overflow: hidden;
   }
-
-  .main-content li img { transition: transform 5s; }
+  
+  .main-content li img { 
+    -webkit-transition: -webkit-transform 5s; 
+    transition: -webkit-transform 5s; 
+    -o-transition: transform 5s; 
+    transition: transform 5s; 
+    transition: transform 5s, 
+    -webkit-transform 5s; 
+  }
 
   .main-content .content {
     position: absolute;
@@ -451,6 +458,8 @@ ul li {
   }
 
  .main-content li:hover img{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
     transform: scale(1.5);
     cursor: pointer;
  } 
