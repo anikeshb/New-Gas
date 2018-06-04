@@ -257,11 +257,7 @@ ul li {
     letter-spacing: -0.5px;
   }
 
-  .active {
-    border: 2px solid #00aef0;
-    background-color: #00aef0;
-    color: #fff;
-  }
+
 
   .dropdown {
     width: 6%;
@@ -1495,7 +1491,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
   }
 }
 
-}
+
 
 /*------------------------------------------------*/
 
@@ -1506,17 +1502,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
    3. Can I switch Page
    ========================================================================== */
 
-   .can .active {
+  .can .active {
     background-color: #00b156;
     color: #fff;
   }
 
   .can main {
     padding-bottom: 10px; 
-    margin-top: 124px; }
+    margin-top: 124px; 
+  }
 
-    /*--------Introduction section page------------------------*/
-
+   /*--------Introduction section page------------------------*/
     .intro {
       padding: 68px 0;
       background-color: #ebebeb;
