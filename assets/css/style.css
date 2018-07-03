@@ -137,16 +137,10 @@ ul li {
 
 .hide { overflow: hidden; }
 
-/*#sp-offers,
-#finance,
-#benefits-anchor {
-  position: relative;
-  visibility: hidden;
-  }*/
-
   #sp-offers,
   #finance,
-  #benefits-anchor
+  #benefits-anchor,
+  #contactus
   { 
     display: inline-block;
     position: relative;
@@ -346,9 +340,10 @@ ul li {
     right: 0;
     bottom: 0;
     left: 0; 
+    overflow: hidden;
   }
 
-  .bg-image img{ height: 100%; }
+  .bg-image img{ height: auto; }
   h2:first-letter { text-transform: uppercase; }
 
   h2 {
@@ -367,11 +362,11 @@ ul li {
     width: 100px; 
     display: block;
     position: absolute;
-    z-index: 3;
-    bottom: 40px;
+    z-index: 2;
+    bottom: 5px;
     left: 50%;
     color: #fff;
-  }
+  } 
 
   .capital { text-transform: uppercase; }
 
@@ -412,7 +407,7 @@ ul li {
     overflow: hidden;
   }
   
-  .main-content li img { 
+.main-content li img { 
     -webkit-transition: -webkit-transform 5s; 
     transition: -webkit-transform 5s; 
     -o-transition: transform 5s; 
@@ -646,7 +641,7 @@ ul li {
   .social-icons li a { display: block; }
 
   .social-icons li {
-    margin-right: 15px;
+    margin-right: 13px;
     text-indent: -9999px;
   }
 
@@ -705,6 +700,10 @@ ul li {
       padding: 20px 0;
       float: left;
     }
+    
+    .bg-image {
+      position: static;
+    }
 
     nav { 
       max-height: 0;
@@ -736,11 +735,11 @@ ul li {
     header .wrapper { width: 93%; }
 
     .banner { 
-      min-height: calc(100vh - 63px);
+      min-height: auto;
       margin-top: 63px; 
     }
     
-    .banner:after {
+/*    .banner:after {
       content: '';
       display: block;
       position: absolute;
@@ -758,7 +757,7 @@ background: -ms-linear-gradient(top, rgba(186,186,186,0.27) 0%, rgba(186,186,186
 background: linear-gradient(to bottom, rgba(186,186,186,0.27) 0%, rgba(186,186,186,0.27) 0%, rgba(186,186,186,0.27) 0%, rgba(160,160,160,0.27) 14%, rgba(0,0,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#000000', GradientType=0 );
 
-    }
+    }*/
 
     .dropdown { 
       width: 20%;
@@ -848,7 +847,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
       text-align: center;
     }
 
-    #sp-offers,#finance,#benefits-anchor {
+    #sp-offers,#finance,#benefits-anchor,#contactus {
       position: relative;
       top: -10vh; 
       visibility: hidden;
@@ -861,11 +860,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 
 
   @media screen and (max-width: 768px) {
-
+    
+    .main-content li:nth-of-type(2n) .content { width: 100%; }
 
     h2 { 
       width: 100%;
-      font-size: 32px;
+      font-size: 30px;
       letter-spacing: 0; 
       text-align: center;
     }
@@ -889,7 +889,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
       font-size: 30px;
       line-height: 45px;
     }
-
+/*
     .main-content .image:after{
       content: '';
       display: block;
@@ -906,18 +906,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
       background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(232,213,211,0.07) 93%, rgba(255,255,255,0) 100%);
       background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(232,213,211,0.07) 93%, rgba(255,255,255,0) 100%);
 
-    }
+    }*/
 
   }
 
   @media screen and (max-width: 600px) {
-
-    .mob { display: block; }
-
-    .desktop,
-    .tab {
-      display: none;
-    }
 
     .btn { margin: 14px auto; }
     .main-content .tab { display: block; }    
@@ -1116,6 +1109,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     .quote { cursor: initial; }
 
     .uvideo { width: 100%; }
+
+         /*----hover removed-----------*/
+
+    .main-content li:hover img { transform: none; }
+    
+    .btn-sub:hover {
+      border: 2px solid #00aef0;
+      background-color: #00aef0;
+      color: #fff;
+    }
+
+    .footer-links li a:hover { color: #fff; }
+    
+    nav li:nth-of-type(1) a:hover { 
+      border: 2px solid #00aef0;
+      background-color: #fff;
+      color: #00aef0;
+    }
+
+    nav li:nth-of-type(2) a:hover {
+      border: 2px solid #00b156;
+      background-color: #fff;
+      color: #00b156;
+    }
+
+    nav li:nth-of-type(3) a:hover {
+      border: 2px solid #008651;
+      background-color: #fff;
+      color: #008651;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -1146,6 +1169,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     }
 
     .quote p { font-size: 20px; }
+    .angle-down { width: 50px; }
+  
 
   }
 
@@ -1482,23 +1507,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
   }
 }
 
-@media screen and (max-width: 750px) and (orientation: landscape) {
-  .bg-image { overflow: hidden; }
-  .bg-image img { height: auto; }
-  .angle-down {
-    z-index: 3;
-    bottom: 15px;
-  } 
-}
 
-@supports (-webkit-overflow-scrolling: touch) {
-  .angle-down {
-    z-index: 5;
-    bottom: 75px;
-  }
-}
+@media screen and (max-width: 480px) { 
+  
+    .mob { display: block; }
 
+    .desktop,
+    .tab {
+      display: none;
+    }
 
+ }
 
 /*------------------------------------------------*/
 
@@ -1640,7 +1659,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     .visible:after {
       content: '\f067';
       display: inline-block;
-      vertical-align: middle;
+      margin-top: 5px;
       float: right;
       color: #fff;
       font: normal 900 16px 'Font Awesome\ 5 Free';
