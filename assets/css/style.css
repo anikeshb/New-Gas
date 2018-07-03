@@ -332,6 +332,11 @@ ul li {
     right: 0;
     bottom: 0;
   }
+  
+  .banner-content h2 {
+    font-weight: 700;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.73), 0 0 73px rgba(0,0,0,0.58);
+  }
 
   .bg-image { 
     position: absolute;
@@ -347,8 +352,8 @@ ul li {
   h2:first-letter { text-transform: uppercase; }
 
   h2 {
-    width: 39%;
-    color: #008651;
+    width: 44%;
+    color: #fff;
     font-size: 40px;
     letter-spacing: 0.5px;
   }
@@ -376,7 +381,7 @@ ul li {
     height: 3px;
     display: inline-block;
     vertical-align: middle;
-    background-color: #008651;
+    background-color: #fff;
   }
 
   /*------------------------------------------*/
@@ -916,6 +921,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     .main-content .tab { display: block; }    
     .align-left{ float: none; }
     .contact-number { font-size: 18px; }
+    .banner-content h2 { font-size: 22px; }
 
     .footer-logo,
     .social-icons {
@@ -1497,6 +1503,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
   .why-switch .benfits .video { padding: 0 0 20px; }
   
   .blue-btn a { 
+    width: 250px;
     padding: 9px 11px;
     font-size: 14px;
   }
@@ -1577,7 +1584,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 
     .qimage h2 {
       width: 100%;
-      margin-top: 50px;
+      margin-top: 20px;
       color: #111;
       font-size: 30px;
       text-align: left;
@@ -1592,6 +1599,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 
     .qimage,
     .body-content { padding-bottom: 20px; }
+    .body-content { margin-top: 40px }
+    
+    .image-quote {
+      overflow: hidden;
+      max-height: 80vh;
+    }
 
     .can p {
       font-size: 30px;
@@ -1690,7 +1703,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
       .intro h1 {
         margin-bottom: 15px; 
         font-size: 26px; 
-        line-height: 17px;
+        line-height: 22px;
       }
 
       .intro h2 {
@@ -1708,7 +1721,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
         font-size: 20px; 
         line-height: 28px;
       }
-
+      
       .can h3 { 
         margin: 10px 0; 
         font-size: 23px;

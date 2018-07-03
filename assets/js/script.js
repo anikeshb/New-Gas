@@ -76,8 +76,36 @@
 				}
 			});
 
+			$('#state').on('focusout', function() {
+				var reg_add = /^[a-zA-Z0-9-\s\!#@$%&'"+-/=^_`{|}[\]~:;,.()-\s\\/]+$/,
+    			reg1 = /^[^<>*?$#%]+$/;
+				if($(this).val() == ""){
+					$(this).next('span.error').html("Field can\'t be empty");
+				} else if($(this).val().length < 4 || !$(this).val().match(reg_add) || !$(this).val().match(reg1)) {
+					$(this).next('span.error').html("Please enter valid input");
+				} else {
+					$(this).next('span.error').html("");
+				}
+			});
+
+
 
 			$('#phone').on('focusout', function() {
+				var reg_tel = /^[0-9-\s\-()+\s/]+$/,
+    			reg1 = /^[^!@#$%^&,_=;:"'./{}[\]|\\`~<>*?]+$/;
+				if($(this).val() == ""){
+					$(this).next('span.error').html("Field can\'t be empty");
+				} else if(!$(this).val().match(reg_tel) || !$(this).val().match(reg1)) {
+					$(this).next('span.error').html("Please enter valid input");
+				} else if ($(this).val().length < 10 || $(this).val().length > 10) {
+					$(this).next('span.error').html("Please enter valid input");
+				}
+				else {
+					$(this).next('span.error').html("");
+				}
+			});
+
+			$('#pin').on('focusout', function() {
 				var reg_tel = /^[0-9-\s\-()+\s/]+$/,
     			reg1 = /^[^!@#$%^&,_=;:"'./{}[\]|\\`~<>*?]+$/;
 				if($(this).val() == ""){
