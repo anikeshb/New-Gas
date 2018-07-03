@@ -112,7 +112,7 @@
 					$(this).next('span.error').html("Field can\'t be empty");
 				} else if(!$(this).val().match(reg_tel) || !$(this).val().match(reg1)) {
 					$(this).next('span.error').html("Please enter valid input");
-				} else if ($(this).val().length < 10 || $(this).val().length > 10) {
+				} else if ($(this).val().length < 5 || $(this).val().length > 5) {
 					$(this).next('span.error').html("Please enter valid input");
 				}
 				else {
