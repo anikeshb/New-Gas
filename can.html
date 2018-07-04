@@ -20,7 +20,7 @@
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+  <meta name="format-detection" content="telephone=no">
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
 
@@ -28,7 +28,7 @@
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
 
    <!-- Font-awesome cdn-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
    
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
@@ -46,7 +46,7 @@
   <header>
     <div class="wrapper">
       <div class="header-top cf">
-          <h1><a href="https://www.eversource.com/content/" title="Eversource"><img src="assets/images/logo.png" alt="Eversource"></a></h1>
+          <h1><a href="index.html" title="Eversource"><img src="assets/images/logo.png" alt="Eversource"></a></h1>
         <nav class="cf">
           <ul>
             <li><a href="why.html" title="Why Switch" class="btn-default"><span class="bold">why</span> switch?</a></li>
@@ -54,13 +54,13 @@
             <li><a href="how.html" title="How Do I Switch" class="btn-default"><span class="bold">how</span> do I switch?</a></li>
           </ul>
         </nav>
-        <span  class="dropdown">
+        <div  class="dropdown">
           <a href="#FIXME" class="fas fa-map-marker-alt"> State</a>
           <ul>
             <li><a href="#FIXME" title="State">connecticut</a></li>
             <li><a href="#FIXME" title="State">massachusetts</a></li>
           </ul> 
-        </span>
+        </div>
         <div class="hamburger">
           <span class="bar1"></span>
           <span class="bar2"></span>
@@ -68,7 +68,7 @@
         </div>
       </div>
      <div class="header-bottom cf">
-       <a class="right" href="#">Call: 855-OIL2GAS</a>
+       <span class="right">Call: 855-OIL2GAS</span>
      </div>
     </div>
    </header>
@@ -91,7 +91,7 @@
         <h2>
           Gas Expansion Projects - Eversource is currently expanding natural gas availability in some communities throughout Connecticut. Learn more about these projects.
         </h2>
-        <span class="blue-btn"><a href="eversource.com" title="Gas Expansion Projects" target="_blank">Gas Expansion Projects</a></span>
+        <span class="blue-btn"><a href="https://www.eversource.com/content/" title="Gas Expansion Projects" target="_blank">Gas Expansion Projects</a></span>
       </div>
     </div> 
     <div class="body-content">
@@ -100,140 +100,150 @@
         You can quickly and easily check the availability of natural gas at your location just by entering your address into our online gas availability tool.
         </p>
         <div class="blue-btn">
-          <a href="eversource.com" title="Natural Gas Availability Tool" target="_blank">
+          <a href="https://www.eversource.com/content/" title="Natural Gas Availability Tool" target="_blank">
             Natural Gas Availability Tool
           </a>   
         </div>
       </div> 
     </div>
     <div class="accordion">
-      <h3>projects</h3>
-      <ul class="project-list">
-        <li>
-          <span class="visible">cromwell</span>
-          <div class="hidden">
-            <div class="hidden-img">
-              <a href="" title="Gas Map Cromwell" target="_blank">
-                <img src="assets/images/">
-              </a>
+      <div class="wrapper">
+        <h3>projects</h3>
+        <div class="project-list" id="accordion">
+         
+            <h4 class="visible cf">cromwell</h4>
+            <div class="hidden">
+              <div class="hidden-img fixed-width">
+                <a href="assets/downloads/gas-map-cromwell.pdf" title="Gas Map Cromwell" target="_blank">
+                  <img src="assets/images/gas-map-cromwell.jpg" alt="Gas Map Cromwell">
+                </a>
+              </div>
+              <p>click to enlarge</p>
+              <ul class="stats">
+                <li>
+                  <span class="camel">route length:</span> 6,055 feet
+                </li>
+                <li>
+                  Status: Line is installed and operational.
+                </li>
+              </ul>
             </div>
-            <p>click to enlarge</p>
-            <ul class="stats">
-              <li>
-                route length: 6,055 feet
-              </li>
-              <li>
-                Status: Line is installed and operational.
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <span class="visible">groton</span>
-          <div class="hidden">
-            <div class="hidden-img">
-              <a href="" title="Gas Map Groton" target="_blank">
-                <img src="assets/images/">
-              </a>
+          
+         
+            <h4 class="visible cf">groton</h4>
+            <div class="hidden">
+              <div class="hidden-img fixed-width">
+                <a href="assets/downloads/gas-map-groton.pdf" title="Gas Map Groton" target="_blank">
+                  <img src="assets/images/gas-map-groton.jpg" alt="Gas Map Groton">
+                </a>
+              </div>
+              <p>click to enlarge</p>
+              <ul class="stats">
+                <li>
+                  Project Phase 2
+                </li>
+                <li>
+                  Route length: 17,440 feet
+                </li>
+                <li>
+                  Status: Line is installed and operational.
+                </li>
+              </ul>
             </div>
-            <p>click to enlarge</p>
-            <ul class="stats">
-              <li>
-                Project Phase 2
-              </li>
-              <li>
-                Route length: 17,440 feet
-              </li>
-              <li>
-                Status: Line is installed and operational.
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <span class="visible">naugatuck</span>
-          <div class="hidden">
-            <div class="hidden-img">
-              <a href="" title="Gas Map Naugatuck(A)" target="_blank">
-                <img src="assets/images/">
-              </a>
+          
+         
+            <h4 class="visible cf">naugatuck</h4>
+            <div class="hidden">
+              <div class="hidden-img fixed-width">
+                <a href="assets/downloads/gas-map-naugatuck-a.pdf" title="Gas Map Naugatuck(A)" target="_blank">
+                  <img src="assets/images/gas-map-naugatuck-a.jpg" alt="Gas Map Naugatuck-A">
+                </a>
+              </div>
+              <p>click to enlarge</p>
+              <ul class="stats">
+                <li>
+                  Route length: 6,825 feet
+                </li>
+                <li>
+                  Status: Line is installed and operational.
+                </li>
+              </ul>
+               <div class="hidden-img fixed-width">
+                <a href="assets/downloads/gas-map-naugatuck-b.pdf" title="Gas Map Naugatuck(B)" target="_blank">
+                  <img src="assets/images/gas-map-naugatuck-b.jpg" alt="Gas Map Naugatuck-B">
+                </a>
+              </div>
+              <p>click to enlarge</p>
+              <ul class="stats">
+                <li>
+                  Route length: 5,750 feet
+                </li>
+                <li>
+                  Status: Line is installed and operational.
+                </li>
+              </ul>
             </div>
-            <p>click to enlarge</p>
-            <ul class="stats">
-              <li>
-                Route length: 6,825 feet
-              </li>
-              <li>
-                Status: Line is installed and operational.
-              </li>
-            </ul>
-             <div class="hidden-img">
-              <a href="" title="Gas Map Naugatuck(B)" target="_blank">
-                <img src="assets/images/">
-              </a>
+          
+         
+            <h4 class="visible cf">stamford (dolphin's cove)</h4>
+            <div class="hidden">
+              <div class="hidden-img fixed-width">
+                <a href="assets/downloads/gas-map-dolphin-cove.pdf" title="Gas Map Stamford" target="_blank">
+                  <img src="assets/images/gas-map-dolphin-cove.jpg" alt="Gas Map Dolphin Cove">
+                </a>
+              </div>
+              <p>click to enlarge</p>
+              <ul class="stats">
+                <li>
+                  Route length:6,125 feet
+                </li>
+                <li>
+                  Status: Line is installed and operational.
+                </li>
+              </ul>
             </div>
-            <p>click to enlarge</p>
-            <ul class="stats">
-              <li>
-                Route length: 5,750 feet
-              </li>
-              <li>
-                Status: Line is installed and operational.
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <span class="visible">stamford (dolphin's cove)</span>
-          <div class="hidden">
-            <div class="hidden-img">
-              <a href="" title="Gas Map Stamford" target="_blank">
-                <img src="assets/images/">
-              </a>
-            </div>
-            <p>click to enlarge</p>
-            <ul class="stats">
-              <li>
-                Route length:6,125 feet
-              </li>
-              <li>
-                Status: Line is installed and operational.
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+          
+        </div>
+      </div>
     </div>
     <div class="copyright cf">
-        <span class="copy">
+        <div class="wrapper">
+          <span class="copy">
           &copy; 2018 Eversource All rights reserved.
-        </span>
+          </span>
+        </div>
     </div>
   </main>
   <!-- main section ends here -->
-  <!-- footer starts here -->
+<!-- footer starts here -->
   <footer>
     <div class="footer-top">
       <div class="wrapper">
         <div class="column-left">
-          <h5>I'm interested in <span class="new-line">switching</span> to natural gas.<span class="bold">Contact me today!</span></h5>
-          <span class="bold contact-number"><a href="#">Call: 855-OIL2GAS</a></span>
+          <h5>I'm interested in <span class="new-line">switching</span> to natural gas. <span class="bold"> Contact me today!</span></h5>
+          <span class="bold contact-number">Call: 855-OIL2GAS</span>
         </div>
         <div class="column-right">
           <form action="#">
             <label for="name">Name*</label>
             <input type="text" id="name">
+            <span class="error"></span>
             <label for="address">Address*</label>
             <input type="text" id="address">
+            <span class="error"></span>
             <label for="city">City,State*</label>
             <input type="text" id="city">
+            <span class="error"></span>
             <label for="email">Email Address*</label>
             <input type="text" id="email">
+            <span class="error"></span>
             <label for="phone">Phone Number*</label>
             <input type="text" id="phone">
+            <span class="error"></span>
             <label for="comment">Comments</label>
             <textarea id="comment" rows="5"></textarea>
             <input type="submit" class="btn-sub" value="Submit">
+            <span class="error"></span>
           </form>
         </div>
       </div>
@@ -246,25 +256,25 @@
             <ul class="footer-links">
               <li><a href="why.html#sp-offers" title="Special Offers">special offers</a></li>
               <li><a href="why.html#finance" title="Financing">financing</a></li>
-              <li><a href="https://www.aga.org/" title="Natural Gas In Your Home">natural gas in your home</a></li>
-              <li><a href="https://c03.apogee.net/mvc/home/hes/land/el?utilityname=eversource&spc=hcc" title="Heating Calculator">heating calculator</a></li>
-              <li><a href=" https://c03.apogee.net/mvc/home/hes/land/el?utilityname=eversource&spc=whc" title="Water Heating Calculator">water heating calculator</a></li>
-              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/why-natural-gas/appliances" title="Natural Gas Appliances">natural gas appliances</a></li>
-              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/why-natural-gas/appliances" title="Equipment & Technology">equipment &amp; technology</a></li>
+              <li><a href="https://www.aga.org/" target="_blank" title="Natural Gas In Your Home">natural gas in your home</a></li>
+              <li><a href="https://c03.apogee.net/mvc/home/hes/land/el?utilityname=eversource&spc=hcc" target="_blank" title="Heating Calculator">heating calculator</a></li>
+              <li><a href=" https://c03.apogee.net/mvc/home/hes/land/el?utilityname=eversource&spc=whc" target="_blank" title="Water Heating Calculator">water heating calculator</a></li>
+              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/why-natural-gas/appliances" target="_blank" title="Natural Gas Appliances">natural gas appliances</a></li>
+              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/why-natural-gas/appliances" target="_blank" title="Equipment & Technology">equipment &amp; technology</a></li>
             </ul>
           </li>
           <li>
             <h6>can i switch?</h6>
             <ul class="footer-links">
-              <li><a href=" https://www.eversource.com/yg/availability/default.aspx?comp=ct" title="Natural Gas Availability Tool">natural gas availability tool</a></li>
-              <li><a href="https://www.eversource.com/content/ct-c/residential/switch/making-the-switch/gas-expansion" title="Gas Expansion Projects">gas expansion projects</a></li>
-              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/making-the-switch/gas-expansion/frequently-asked-questions" title="Gas Expansion FAQ">gas expansion FAQ</a></li>
+              <li><a href=" https://www.eversource.com/yg/availability/default.aspx?comp=ct" target="_blank" title="Natural Gas Availability Tool">natural gas availability tool</a></li>
+              <li><a href="https://www.eversource.com/content/ct-c/residential/switch/making-the-switch/gas-expansion" target="_blank" title="Gas Expansion Projects">gas expansion projects</a></li>
+              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/making-the-switch/gas-expansion/frequently-asked-questions" target="_blank" title="Gas Expansion FAQ">gas expansion FAQ</a></li>
             </ul>
           </li>
           <li>
             <h6>how do i switch?</h6>
             <ul class="footer-links">
-              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/making-the-switch/find-a-contractor" title="Find A Contractor">find a contractor</a></li>
+              <li><a href=" https://www.eversource.com/content/ct-c/residential/switch/making-the-switch/find-a-contractor" target="_blank" title="Find A Contractor">find a contractor</a></li>
             </ul>
           </li>
           <li>
@@ -280,15 +290,15 @@
       <div class="wrapper cf">
         <div class="align-left">
           <div class="footer-logo">
-            <a href="https://www.eversource.com/content/" title="Eversource">
+            <a href="index.html" title="Eversource">
               <img src="assets/images/logo.png" alt="Eversource"/>
             </a>  
           </div>
           <ul class="social-icons">
-            <li><a href="https://twitter.com/eversourcect" title="Twitter" target="_blank">twitter</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpq2zozgxhuM4iafvhVImVg" title="Youtube" target="_blank">youtube</a></li>
-            <li><a href="https://facebook.com/EversourceCT" title="Facebook" target="_blank">facebook</a></li>
-            <li><a href="https://www.instagram.com/eversourceenergy/" title="Intsagram" target="_blank">  instagram</a></li>
+            <li><a href="https://twitter.com/eversourcect" title="Twitter" target="_blank" rel="nofollow"><img src="assets/images/twitter-05.svg" alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCpq2zozgxhuM4iafvhVImVg" title="Youtube" target="_blank" rel="nofollow"><img src="assets/images/youtube-03.svg" alt="Youtube"></a></li>
+            <li><a href="https://facebook.com/EversourceCT" title="Facebook" target="_blank" rel="nofollow"><img src="assets/images/facebook-04.svg" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/eversourceenergy/" title="Intsagram" target="_blank" rel="nofollow">  <img src="assets/images/instagram-02.svg" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>
@@ -298,6 +308,8 @@
 </div>
 <!-- container ends  here -->
 <script src="assets/vendor/jquery-1.8.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>   
