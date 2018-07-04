@@ -922,7 +922,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     .main-content .tab { display: block; }    
     .align-left{ float: none; }
     .contact-number { font-size: 18px; }
-    .banner-content h2 { font-size: 18px; }
+
+    .banner-content h2 { 
+      font-size: 20px;
+      line-height: 24px; 
+    }
 
     .footer-logo,
     .social-icons {
