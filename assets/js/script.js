@@ -4,10 +4,6 @@
 
 		$(window).on('load', function() {
 
-			if($(window).width() > 1024) {
-				$('.quote').draggable();
-			}
-
 	    $( "#accordion" ).accordion({
 	      collapsible: true,
 	      active: false,
