@@ -129,7 +129,7 @@
 			});
 
 			var $scroll_div = $('.main-content');
-			$('.bounce').on('click' , function(e) {
+			$('#down').on('click' , function(e) {
 				e.preventDefault();
 				if($(window).width() > 980) {
 					$('html, body').animate({
