@@ -179,14 +179,14 @@ ul li {
 
   nav {
     box-sizing: border-box;
-    width: 69%;
+    width: 66%;
     padding: 20px 0 13px;
     vertical-align: top;
   }
 
   .btn-default {
     box-sizing: border-box;
-    width: 180px;
+    width: 178px;
     padding: 10px 0;
     border: 2px solid #00b156;
     border-radius: 30px; 
@@ -204,7 +204,7 @@ ul li {
   }
 
   nav ul { float: right; }
-  nav li { margin-right: 10px; }
+  nav li:not(:last-child) { margin-right: 3px; }
 
   nav li:nth-of-type(1) a {
     border: 2px solid #00aef0;
@@ -243,7 +243,7 @@ ul li {
   .header-bottom { padding-bottom: 13px; }
 
   .header-bottom span{
-    margin-right: 9%; 
+    margin-right: 13%; 
     float: right;
     font-size: 18px;
     font-family: 'Open Sans',sans-serif;
@@ -254,12 +254,12 @@ ul li {
 
 
   .dropdown {
-    width: 6%;
+    width: 10%;
     padding-top: 35px;
     display: inline-block; 
     vertical-align: top;
     position: relative;
-    text-align: right;
+    text-align: center;
   }
 
   .hamburger { display: none; }
@@ -268,8 +268,7 @@ ul li {
     border-radius: 4px;
     color: #666;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 13px;
   }
 
   .dropdown a:before { 
@@ -281,8 +280,8 @@ ul li {
     max-height: 0;
     overflow: hidden;
     position: absolute;
-    top: 62px;
-    left: -10px;
+    top: 70px;
+    left: -6px;
     transition: ease-in 0.5s;
     -moz-transition: 0.5s ease-in;
     -webkit-transition: 0.5s ease-in;
@@ -702,7 +701,7 @@ ul li {
   @media screen and (max-width: 980px) {
 
     h1 {
-      width: 40%;
+      width: 50%;
       max-width: 210px;
       padding: 20px 0;
       float: left;
@@ -730,7 +729,7 @@ ul li {
 
     nav ul { float: none; }  
 
-    nav li {
+    .mobile ul li {
       display: block; 
       width: 60%;
       margin: 20px auto;
@@ -767,9 +766,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     }*/
 
     .dropdown { 
-      width: 20%;
+      width: 30%;
       padding: 20px 0;
-      margin-right: 25px;
+      margin-right: 15px;
     }
 
     h2 { width: 50%; }
@@ -928,6 +927,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
       font-size: 20px;
       line-height: 24px; 
     }
+    
+    .dropdown a { 
+      font-size: 12px;
+      text-align: center; 
+    }
 
     .footer-logo,
     .social-icons {
@@ -937,7 +941,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
       display: block;
       text-align: center;
     }
-
+    
   } 
 
   /* ==========================================================================*/
