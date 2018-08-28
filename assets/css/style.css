@@ -993,8 +993,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 
 
   .video-container {
-    height: 0; 
-    padding-bottom: 56.25%;
     padding-top: 30px; 
     position: relative;
     overflow: hidden;
@@ -1451,7 +1449,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 }
 
 @media screen and (max-width: 600px) {
-
   .why-switch .banner-why { 
     padding: 30px 0; 
     text-align: justify;
@@ -1527,6 +1524,65 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
  }
 
 /*------------------------------------------------*/
+
+/* -----------------Modal ------------------- */
+ #popup {
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10001;
+    background-color:rgba(0,0,0,0.5);
+    overflow-x: hidden;
+    overflow-y: scroll;
+ }
+
+  .popup-container{
+    width: 50%;
+    margin-bottom: 65px;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10002;
+    background: transparent;
+    animation-name: slideBelow;
+    animation-duration: 0.3s;
+  } 
+  .popup-close {
+    position: absolute;
+    right: 24px;
+    top: 19px;
+    cursor: pointer;
+  }
+
+  .popup-close:after {
+    content: "\f00d";
+    color: #111;
+    font-family: "FontAwesome";
+    font-size: 20px;
+  }
+
+  @-webkit-keyframes slideBelow {
+    0%   {top: 0;}
+    25%  {top: 2.5%;}
+    50%  {top: 5%;}
+    75%  {top: 7.5%;}
+    100% {top: 10%;}
+  }
+  @keyframes slideBelow {
+    0%   {top: 0;}
+    25%  {top: 2.5%;}
+    50%  {top: 5%;}
+    75%  {top: 7.5%;}
+    100% {top: 10%;}
+  }
+
+/* ------------------------------------------ */
 
 /* ==========================================================================*/
 
@@ -1692,7 +1748,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     }  
 
     @media screen and (max-width: 600px) { 
-
+      .popup-container { width : 90% }
       .intro { 
         padding: 40px 10px;
         text-align: center; 

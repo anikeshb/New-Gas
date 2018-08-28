@@ -118,8 +118,7 @@
     <div class="video">
       <div class="wrapper">
         <div class="uvideo">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VZQw223gH_k"></iframe>
+          <div class="video-container" data-url='VZQw223gH_k'>
           </div>
           <div class="quote">
             <p>“ It’s very reliable. You don’t have to wait for deliveries...”</p>
@@ -160,8 +159,7 @@
     <div class="video">
       <div class="wrapper">
         <div class="uvideo">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/CXelVXSxkR0"></iframe>
+          <div class="video-container" data-url='CXelVXSxkR0'>
           </div>
           <div class="quote">
             <p>“I’m looking for the best ways to save money...”</p>
@@ -205,8 +203,7 @@
           <div class="video">
             <div class="wrapper">
               <div class="uvideo">
-                <div class="video-container">
-                  <iframe src="https://www.youtube.com/embed/lc2XR3xyvBw"></iframe>
+                <div class="video-container" data-url='lc2XR3xyvBw'>
                 </div>
               </div>
             </div>
@@ -238,6 +235,16 @@
 
   </main>
   <!-- main section ends here -->
+    
+  <!-- modal starts here -->
+  <div id="popup">
+     <span class="popup-close" id="close"></span>
+    <div class="popup-container">
+     
+    </div>
+  </div>
+  <!-- modal ends here -->
+
   <span id="contactus"></span>
   <!-- footer starts here -->
   <footer>
@@ -337,9 +344,54 @@
   <!-- footer ends here -->
 </div>
 <!-- container ends  here -->
+<script src="https://www.youtube.com/iframe_api"></</script>
 <script src="assets/vendor/jquery-1.8.3.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script>
+    var player, playing=false;
+   function onYouTubeIframeAPIReady() {
+     $('.video-container').each(function(index,ele){
+       var url=$(this).data("url");
+       player=new YT.Player(ele,{
+       videoId: url,
+       width: "100%",
+       events: {
+         'onStateChange': onPlayerStateChange 
+       }
+       });
+     })
+   }
+  
+   function onPlayerStateChange(event) {
+     
+    if (event.data === 3 || event.data === 1) {
+      var obj=event.target.getIframe();
+      event.target.stopVideo();
+      $(".popup-container").children(obj).remove();
+      $('#popup').fadeIn(500);
+      $(obj).clone().appendTo(".popup-container");
+
+      $('.popup-container').children('iframe')[0].src=
+      $('.popup-container').children('iframe')[0].src+"&autoplay=1";
+      $('.popup-container').children('iframe').trigger('click');
+    }
+   }
+   
+   $('#popup').click(function(){
+        $(this).fadeOut(400);
+        $(".popup-container").children('iframe').remove();
+      });
+
+    $('#close').click(function(){
+      $('#popup').fadeOut(400);
+      $(".popup-container").children('iframe').remove();
+    });
+
+    $('.popup-container').click(function(e){
+        e.stopPropagation();
+      })
+ </script>
 </body>
 </html>
