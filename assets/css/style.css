@@ -1545,9 +1545,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     margin-bottom: 65px;
     display: inline-block;
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     z-index: 10002;
     background: transparent;
     animation-name: slideBelow;
@@ -1555,9 +1555,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
   } 
   .popup-close {
     position: absolute;
-    right: -20px;
-    top: -20px;
-    font-size: 28px;
+     z-index: 10002;
+    right: 0px;
+    top: -24px;
+    font-size: 40px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
