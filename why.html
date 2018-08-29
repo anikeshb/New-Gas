@@ -238,7 +238,7 @@
     
   <!-- modal starts here -->
   <div id="popup">
-     <span class="popup-close" id="close"></span>
+     <span class="popup-close" id="close">&times;</span>
     <div class="popup-container">
      
     </div>
@@ -375,17 +375,23 @@
 
       $('.popup-container').children('iframe')[0].src=
       $('.popup-container').children('iframe')[0].src+"&autoplay=1";
-      $('.popup-container').children('iframe').trigger('click');
+      $('html').addClass('hide');
     }
    }
    
    $('#popup').click(function(){
         $(this).fadeOut(400);
+        if($('html').hasClass('hide')) {
+          $('html').removeClass('hide')
+        }
         $(".popup-container").children('iframe').remove();
       });
 
     $('#close').click(function(){
       $('#popup').fadeOut(400);
+      if($('html').hasClass('hide')) {
+          $('html').removeClass('hide')
+        }
       $(".popup-container").children('iframe').remove();
     });
 

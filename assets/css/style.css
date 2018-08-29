@@ -1472,7 +1472,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     line-height: 30px;
   }
 
-  .blue-btn { margin: 10px; }
+  .blue-btn { margin: 8px; }
 
   .why-switch main li:before { 
     width: 8px;
@@ -1500,7 +1500,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
   .why-switch .benfits .video { padding: 0 0 20px; }
   
   .blue-btn a { 
-    width: 250px;
+    width: 235px;
     padding: 9px 11px;
     font-size: 14px;
   }
@@ -1535,7 +1535,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     right: 0;
     bottom: 0;
     z-index: 10001;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.8);
     overflow-x: hidden;
     overflow-y: scroll;
  }
@@ -1557,14 +1557,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     position: absolute;
     right: 24px;
     top: 19px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
     cursor: pointer;
-  }
-
-  .popup-close:after {
-    content: "\f00d";
-    color: #111;
-    font-family: "FontAwesome";
-    font-size: 20px;
   }
 
   @-webkit-keyframes slideBelow {
