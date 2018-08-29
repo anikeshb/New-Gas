@@ -130,8 +130,8 @@
 
   <!-- modal starts here -->
   <div id="popup">
-      <span class="popup-close" id="close"></span>
      <div class="popup-container">
+      <span class="popup-close" id="close"></span>
       
      </div>
    </div>
@@ -262,7 +262,7 @@
     if (event.data === 3 || event.data === 1) {
       var obj=event.target.getIframe();
       event.target.stopVideo();
-      $(".popup-container").children(obj).remove();
+      $(".popup-container").children('iframe').remove();
       $('#popup').fadeIn(500);
       $(obj).clone().appendTo(".popup-container");
 

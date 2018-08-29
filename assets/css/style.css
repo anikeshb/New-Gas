@@ -1555,8 +1555,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
   } 
   .popup-close {
     position: absolute;
-    right: 24px;
-    top: 19px;
+    right: -20px;
+    top: -20px;
     font-size: 28px;
     font-weight: bold;
     color: #fff;
